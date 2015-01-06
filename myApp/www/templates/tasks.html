@@ -1,0 +1,14 @@
+<div> testing </div>
+<ion-view view-title="Tasks">
+  <ion-content padding="false">
+    <div class="list">
+    	<div class="item item-divider" 
+           ng-repeat="(key, value) in tasks | groupBy: 'projectId'">
+    		 {{projectName(key)}}
+	    	<div class="item" ng-repeat = "task in value">
+	    		{{task.description}}
+	    	</div>
+    	</div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,17 @@
+<div class="modal">
+    <ion-header-bar class="bar bar-header bar-positive">      
+      <div class="button button-clear" ng-click="addTask()"><span class="icon ion-checkmark"></span></div>
+      <div class="button button-clear" ng-click="addTaskModal.hide()"><span class="icon ion-close"></span></div>
+    </ion-header-bar>
+    <ion-content has-header="true" padding="true"> 
+	  <label class="item item-input item-select">
+		 <div class="input-label">
+	      Select Project
+	     </div>
+	     <select>
+	      <option ng-repeat="project in projects">{{project.name}}</option>	      
+	     </select>
+	  </label>   	
+      <textarea class="notebook" ng-model = "task.description" ng-required></textarea>
+    </ion-content>
+</div>

@@ -1,0 +1,22 @@
+@import "../lib/ionic/scss/ionic";
+
+$grey-theme: rgba(101, 100, 103, 0.42);
+
+.col-offset-2 {
+  margin-left: 2%;
+}
+
+.notebook {
+	 background: url(../img/notepad.png) repeat-y;
+	 width: 100vw;
+	 height: 100vh;
+	 font: normal 14px verdana;
+	 line-height: 25px;
+	 padding: 2px 10px;
+	 border: solid 1px #ddd;
+}
+
+
+a.selected {
+	background-color: $grey-theme !important;
+}

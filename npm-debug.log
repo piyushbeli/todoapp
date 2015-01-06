@@ -1,0 +1,1330 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   '-g',
+1 verbose cli   'install',
+1 verbose cli   'ionic' ]
+2 info using npm@1.1.65
+3 info using node@v0.8.14
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose read json C:\Users\Piyush\AppData\Roaming\npm\package.json
+6 verbose read json C:\Users\Piyush\AppData\Roaming\npm\package.json
+7 verbose cache add [ 'ionic', null ]
+8 silly cache add name=undefined spec="ionic" args=["ionic",null]
+9 verbose parsed url { pathname: 'ionic', path: 'ionic', href: 'ionic' }
+10 silly lockFile 00d10074-ionic ionic
+11 verbose lock ionic C:\Users\Piyush\AppData\Roaming\npm-cache\00d10074-ionic.lock
+12 silly lockFile 00d10074-ionic ionic
+13 verbose addNamed [ 'ionic', '' ]
+14 verbose addNamed [ null, '' ]
+15 silly lockFile 966fc04a-ionic ionic@
+16 verbose lock ionic@ C:\Users\Piyush\AppData\Roaming\npm-cache\966fc04a-ionic.lock
+17 silly addNameRange { name: 'ionic', range: '', hasData: false }
+18 verbose url raw ionic
+19 verbose url resolving [ 'https://registry.npmjs.org/', './ionic' ]
+20 verbose url resolved https://registry.npmjs.org/ionic
+21 info trying registry request attempt 1 at 23:05:51
+22 verbose etag "46HKK50V7SXFX5GWJAPETCSNI"
+23 http GET https://registry.npmjs.org/ionic
+24 http 200 https://registry.npmjs.org/ionic
+25 silly registry.get cb [ 200,
+25 silly registry.get   { date: 'Tue, 23 Dec 2014 07:05:51 GMT',
+25 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 silly registry.get     etag: '"C5NY1IUQDY8477F14OBJNCNGS"',
+25 silly registry.get     'content-type': 'application/json',
+25 silly registry.get     'cache-control': 'max-age=60',
+25 silly registry.get     'content-length': '163319',
+25 silly registry.get     'accept-ranges': 'bytes',
+25 silly registry.get     via: '1.1 varnish',
+25 silly registry.get     age: '5',
+25 silly registry.get     'x-served-by': 'cache-sn89-SIN',
+25 silly registry.get     'x-cache': 'HIT',
+25 silly registry.get     'x-cache-hits': '1',
+25 silly registry.get     'x-timer': 'S1419318351.956394,VS0,VE0',
+25 silly registry.get     vary: 'Accept',
+25 silly registry.get     'keep-alive': 'timeout=10, max=50',
+25 silly registry.get     connection: 'Keep-Alive' } ]
+26 silly addNameRange number 2 { name: 'ionic', range: '', hasData: true }
+27 silly addNameRange versions [ 'ionic',
+27 silly addNameRange   [ '0.9.6',
+27 silly addNameRange     '0.9.8',
+27 silly addNameRange     '0.9.9',
+27 silly addNameRange     '0.9.10',
+27 silly addNameRange     '0.9.11',
+27 silly addNameRange     '0.9.12',
+27 silly addNameRange     '0.9.13',
+27 silly addNameRange     '0.9.14',
+27 silly addNameRange     '0.9.15',
+27 silly addNameRange     '0.9.16',
+27 silly addNameRange     '1.0.0-beta.1',
+27 silly addNameRange     '1.0.0-beta',
+27 silly addNameRange     '1.0.1-beta',
+27 silly addNameRange     '1.0.3-beta',
+27 silly addNameRange     '1.0.4',
+27 silly addNameRange     '1.0.5',
+27 silly addNameRange     '1.0.6',
+27 silly addNameRange     '1.0.7',
+27 silly addNameRange     '1.0.8',
+27 silly addNameRange     '1.0.9',
+27 silly addNameRange     '1.0.10',
+27 silly addNameRange     '1.0.11',
+27 silly addNameRange     '1.0.12',
+27 silly addNameRange     '1.0.13',
+27 silly addNameRange     '1.0.14',
+27 silly addNameRange     '1.0.15',
+27 silly addNameRange     '1.0.16',
+27 silly addNameRange     '1.0.17',
+27 silly addNameRange     '1.1.0-beta1',
+27 silly addNameRange     '1.1.0-beta2',
+27 silly addNameRange     '1.1.0-beta3',
+27 silly addNameRange     '1.1.0-beta4',
+27 silly addNameRange     '1.1.0-beta5',
+27 silly addNameRange     '1.1.0-beta6',
+27 silly addNameRange     '1.1.0',
+27 silly addNameRange     '1.1.1-beta1',
+27 silly addNameRange     '1.1.1-beta2',
+27 silly addNameRange     '1.1.1-beta3',
+27 silly addNameRange     '1.1.1',
+27 silly addNameRange     '1.1.3',
+27 silly addNameRange     '1.1.4',
+27 silly addNameRange     '1.1.5-beta1',
+27 silly addNameRange     '1.1.5-beta2',
+27 silly addNameRange     '1.1.5-beta3',
+27 silly addNameRange     '1.1.5-beta4',
+27 silly addNameRange     '1.1.5-beta5',
+27 silly addNameRange     '1.1.5',
+27 silly addNameRange     '1.1.6',
+27 silly addNameRange     '1.1.7-beta1',
+27 silly addNameRange     '1.1.7',
+27 silly addNameRange     '1.1.8-beta1',
+27 silly addNameRange     '1.1.8-beta2',
+27 silly addNameRange     '1.1.8-beta3',
+27 silly addNameRange     '1.1.8-beta4',
+27 silly addNameRange     '1.1.8-beta5',
+27 silly addNameRange     '1.1.8',
+27 silly addNameRange     '1.1.9-beta1',
+27 silly addNameRange     '1.1.9',
+27 silly addNameRange     '1.1.10',
+27 silly addNameRange     '1.1.11-beta1',
+27 silly addNameRange     '1.1.11-beta2',
+27 silly addNameRange     '1.1.11',
+27 silly addNameRange     '1.1.12-beta1',
+27 silly addNameRange     '1.1.12-beta2',
+27 silly addNameRange     '1.1.12-beta3',
+27 silly addNameRange     '1.1.12',
+27 silly addNameRange     '1.1.13',
+27 silly addNameRange     '1.1.14-beta1',
+27 silly addNameRange     '1.1.14-beta2',
+27 silly addNameRange     '1.1.14-beta3',
+27 silly addNameRange     '1.2.0-beta1',
+27 silly addNameRange     '1.2.0',
+27 silly addNameRange     '1.2.1-beta1',
+27 silly addNameRange     '1.2.1-beta2',
+27 silly addNameRange     '1.2.1-beta3',
+27 silly addNameRange     '1.2.1-beta4',
+27 silly addNameRange     '1.2.1',
+27 silly addNameRange     '1.2.2',
+27 silly addNameRange     '1.2.3-beta1',
+27 silly addNameRange     '1.2.3-beta2',
+27 silly addNameRange     '1.2.3-beta3',
+27 silly addNameRange     '1.2.3',
+27 silly addNameRange     '1.2.4-beta1',
+27 silly addNameRange     '1.2.4-beta2',
+27 silly addNameRange     '1.2.4-beta3',
+27 silly addNameRange     '1.2.4',
+27 silly addNameRange     '1.2.5-beta1',
+27 silly addNameRange     '1.2.5-beta2',
+27 silly addNameRange     '1.2.5-beta3',
+27 silly addNameRange     '1.2.5',
+27 silly addNameRange     '1.2.6-beta1',
+27 silly addNameRange     '1.2.6-beta2',
+27 silly addNameRange     '1.2.6-beta3',
+27 silly addNameRange     '1.2.6',
+27 silly addNameRange     '1.2.7',
+27 silly addNameRange     '1.2.8-beta1',
+27 silly addNameRange     '1.2.8-beta2',
+27 silly addNameRange     '1.2.8',
+27 silly addNameRange     '1.2.9',
+27 silly addNameRange     '1.2.10',
+27 silly addNameRange     '1.2.11',
+27 silly addNameRange     '1.2.12',
+27 silly addNameRange     '1.2.13',
+27 silly addNameRange     '1.2.14-beta1',
+27 silly addNameRange     '1.2.14-beta2' ] ]
+28 verbose addNamed [ 'ionic', '1.2.13' ]
+29 verbose addNamed [ '1.2.13', '1.2.13' ]
+30 silly lockFile 5e1bd26f-ionic-1-2-13 ionic@1.2.13
+31 verbose lock ionic@1.2.13 C:\Users\Piyush\AppData\Roaming\npm-cache\5e1bd26f-ionic-1-2-13.lock
+32 verbose read json C:\Users\Piyush\AppData\Roaming\npm-cache\ionic\1.2.13\package\package.json
+33 silly lockFile 5e1bd26f-ionic-1-2-13 ionic@1.2.13
+34 silly lockFile 966fc04a-ionic ionic@
+35 silly resolved [ { name: 'ionic',
+35 silly resolved     version: '1.2.13',
+35 silly resolved     preferGlobal: true,
+35 silly resolved     description: 'A tool for creating and developing Ionic Framework mobile apps.',
+35 silly resolved     homepage: 'http://ionicframework.com/',
+35 silly resolved     bin: { ionic: 'bin/ionic' },
+35 silly resolved     keywords:
+35 silly resolved      [ 'ionic',
+35 silly resolved        'ionic framework',
+35 silly resolved        'ionicframework',
+35 silly resolved        'mobile',
+35 silly resolved        'app',
+35 silly resolved        'hybrid',
+35 silly resolved        'cordova',
+35 silly resolved        'phonegap' ],
+35 silly resolved     repository:
+35 silly resolved      { type: 'git',
+35 silly resolved        url: 'https://github.com/driftyco/ionic-cli.git' },
+35 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+35 silly resolved     license: 'MIT',
+35 silly resolved     dependencies:
+35 silly resolved      { archiver: '0.5.1',
+35 silly resolved        colors: '0.6.2',
+35 silly resolved        connect: '3.1.1',
+35 silly resolved        'cross-spawn': '0.2.3',
+35 silly resolved        'connect-livereload': '0.4.0',
+35 silly resolved        'event-stream': '3.0.x',
+35 silly resolved        finalhandler: '0.2.0',
+35 silly resolved        'form-data': '0.1.4',
+35 silly resolved        gulp: '3.8.8',
+35 silly resolved        ncp: '0.4.2',
+35 silly resolved        npm: '2.1.3',
+35 silly resolved        open: '0.0.5',
+35 silly resolved        optimist: '0.6.0',
+35 silly resolved        prompt: '0.2.12',
+35 silly resolved        progress: '1.1.7',
+35 silly resolved        'proxy-middleware': '^0.7.0',
+35 silly resolved        q: '1.0.1',
+35 silly resolved        request: '2.27.0',
+35 silly resolved        'serve-static': '1.7.1',
+35 silly resolved        shelljs: '0.2.6',
+35 silly resolved        'tiny-lr-fork': '0.0.5',
+35 silly resolved        unzip: '0.1.9',
+35 silly resolved        'vinyl-fs': '0.3.7',
+35 silly resolved        xml2js: '0.4.4',
+35 silly resolved        underscore: '~1.7.0' },
+35 silly resolved     readme: 'Ionic-Cli\n=========\n\nThe Ionic Framework command line utility makes it easy to start, build, run, and emulate [Ionic](http://ionicframework.com/) apps. In the future, it will also have support for our mobile development services and tools that make Ionic even more powerful.\n\nUse the `ionic --help` command for more detailed task information.\n\n## Installing\n\n```bash\n$ npm install -g ionic\n```\n\n*Note: For a global install of `-g ionic`, OSX/Linux users may need to prefix the command with `sudo`.*\n\n\n## Starting an Ionic App\n\n```bash\n$ ionic start myapp [template]\n```\n\nStarter templates can either come from a named template, a Github repo, a Codepen, or a local directory. A starter template is what becomes the `www` directory within the Cordova project.\n\n__Named template starters:__\n\n* [tabs](https://github.com/driftyco/ionic-starter-tabs) (Default)\n* [sidemenu](https://github.com/driftyco/ionic-starter-sidemenu)\n* [blank](https://github.com/driftyco/ionic-starter-blank)\n\n__Github Repo starters:__\n\n* Any Github repo url, ex: [https://github.com/driftyco/ionic-starter-tabs](https://github.com/driftyco/ionic-starter-tabs)\n* Named templates are simply aliases to Ionic starter repos\n\n__Codepen URL starters:__\n\n* Any Codepen url, ex: [http://codepen.io/ionic/pen/odqCz](http://codepen.io/ionic/pen/odqCz)\n* [Ionic Codepen Demos](http://codepen.io/ionic/public-list/)\n\n__Local directory starters:__\n\n* Relative or absolute path to a local directory\n\n__Command-line flags/options:__\n\n    --appname, -a  .......  Human readable name for the app\n                            (Use quotes around the name)\n    --id, -i  ............  Package name set in the <widget id> config\n                            ex: com.mycompany.myapp\n    --no-cordova, -w  ....  Do not create an app targeted for Cordova\n\n\n## Testing in a Browser\n\nUse `ionic serve` to start a local development server for app dev and testing. This is useful for both desktop browser testing, and to test within a device browser which is connected to the same network. Additionally, this command starts LiveReload which is used to monitor changes in the file system. As soon as you save a file the browser is refreshed automatically. View [Using Sass](https://github.com/driftyco/ionic-cli/blob/master/README.md#using-sass) if you would also like to have `ionic serve` watch the project\'s Sass files.\n\n```bash\n$ ionic serve [options]\n```\n\n__Service Proxies:__\n\nThe `serve` command can add some proxies to the http server. These proxies are useful if you are developing in the browser and you need to make calls to an external API. With this feature you can proxy request to the external api through the ionic http server preventing the `No \'Access-Control-Allow-Origin\' header is present on the requested resource` error.\n\nIn the `ionic.project` file you can add a property with an array of proxies you want to add. The proxies are object with two properties:\n\n* `path`: string that will be matched against the beginning of the incoming request URL.\n* `proxyUrl`: a string with the url of where the proxied request should go.\n\n```json\n{\n  "name": "appname",\n  "email": "",\n  "app_id": "",\n  "proxies": [\n    {\n      "path": "/v1",\n      "proxyUrl": "https://api.instagram.com/v1"\n    }\n  ]\n}\n\n```\n\nUsing the above configuration, you can now make requests to your local server at `http://localhost:8100/v1` to have it proxy out requests to `https://api.instagram.com/v1`\n\nFor example:\n\n```js\nangular.module(\'starter.controllers\', [])\n.constant(\'InstagramApiUrl\', \'\')\n// .contant(\'InstagramApiUrl\',\'https://api.instagram.com\')\n//In production, make this the real URL\n\n.controller(\'FeedCtrl\', function($scope, $http, InstagramApiUrl) {\n\n  $scope.feed = null;\n\n  $http.get(InstagramApiUrl + \'/v1/media/search?client_id=1&lat=48&lng=2.294351\').then(function(data) {\n    console.log(\'data \' , data)\n    $scope.feed = data;\n  })\n\n})\n```\n\nSee also [this gist](https://gist.github.com/jbavari/d9c1c94058c4fdd4e935) for more help.\n\n__Command-line flags/options:__\n\n    [--consolelogs|-c] ......  Print app console logs to Ionic CLI\n    [--serverlogs|-s] .......  Print dev server logs to Ionic CLI\n    [--port|-p] .............  Dev server HTTP port (8100 default)\n    [--livereload-port|-i] ..  Live Reload port (35729 default)\n    [--nobrowser|-b] ........  Disable launching a browser\n    [--nolivereload|-r] .....  Do not start live reload\n    [--noproxy|-x] ..........  Do not add proxies\n\n\n## Adding a platform target\n\n```bash\n$ ionic platform ios android\n```\n\n## Building your app\n\n```bash\n$ ionic build ios\n```\n\n## Live Reload App During Development (beta)\n\nThe `run` or `emulate` command will deploy the app to the specified platform devices/emulators. You can also run __live reload__ on the specified platform device by adding the `--livereload` option. The live reload functionality is similar to `ionic serve`, but instead of developing and debugging an app using a standard browser, the compiled hybrid app itself is watching for any changes to its files and reloading the app when needed. This reduces the requirement to constantly rebuild the app for small changes. However, any changes to plugins will still require a full rebuild. For live reload to work, the dev machine and device must be on the same local network, and the device must support [web sockets](http://caniuse.com/websockets).\n\nWith live reload enabled, an app\'s console logs can also be printed to the terminal/command prompt by including the `--consolelogs` or `-c` option. Additionally, the development server\'s request logs can be printed out using `--serverlogs` or `-s` options.\n\n__Command-line flags/options for `run` and `emulate`:__\n\n    [--livereload|-l] .......  Live Reload app dev files from the device (beta)\n    [--consolelogs|-c] ......  Print app console logs to Ionic CLI (live reload req.)\n    [--serverlogs|-s] .......  Print dev server logs to Ionic CLI (live reload req.)\n    [--port|-p] .............  Dev server HTTP port (8100 default, live reload req.)\n    [--livereload-port|-i] ..  Live Reload port (35729 default, live reload req.)\n    [--debug|--release]\n\nWhile the server is running for live reload, you can use the following commands within the CLI:\n\n    restart or r to restart the client app from the root\n    goto or g and a url to have the app navigate to the given url\n    consolelogs or c to enable/disable console log output\n    serverlogs or s to enable/disable server log output\n    quit or q to shutdown the server and exit\n\n\n## Emulating your app\n\nDeploys the Ionic app on specified platform emulator. This is simply an alias for `run --emulator`.\n\n```bash\n$ ionic emulate ios [options]\n```\n\n\n## Running your app\n\nDeploys the Ionic app on specified platform devices. If a device is not found it\'ll then deploy to an emulator/simulator.\n\n```bash\n$ ionic run ios [options]\n```\n\n\n## Update Ionic lib\n\nUpdate Ionic library files, which are found in the `www/lib/ionic` directory. If bower is being used\nby the project, this command will automatically run `bower update ionic`, otherwise this command updates\nthe local static files from Ionic\'s CDN.\n\n```bash\n$ ionic lib update\n```\n*Note: Using bower? This command does not update Ionic\'s dependencies. Run `bower update` to update Ionic and all of it\'s dependencies defined in `bower.json`.*\n\n## Packaging an app (beta)\n\nUsing Ionic\'s service, you can compile and package your project into an app-store ready app without\nrequiring native SDKs on your machine.\n\n```bash\n$ ionic package debug android\n```\n\nThe third argument can be either `debug` or `release`, and the last argument can be either `android` or `ios`.\n\n\n## Cordova Commands\n\nIonic uses Cordova underneath, so you can also substitute Cordova commands to prepare/build/emulate/run, or to add additional plugins.\n\n*Note: we occasionally send anonymous usage statistics to the Ionic team to make the tool better.*\n\n## Working around proxies\n\nIf you have a proxy you need to get around, you can pass that proxy with the default `http_proxy` [node environment variable](https://www.npmjs.org/doc/misc/npm-config.html#proxy) or an environment variable `proxy`.\n\nA few ways to set up and use the environment variable:\n\n```bash\nexport http_proxy=internal.proxy.com\n# Or\nexport PROXY=internal.proxy.com\n\nionic start my_app\n\n# Additionally, pass in line\nPROXY=internal.proxy.com ionic start my_app\n```\n\n\n## Using Sass\n\nBy default, starter projects are hooked up to Ionic\'s precompiled CSS file, which is found in the project\'s `www/lib/ionic/css` directory, and is linked to the app in the head of the root `index.html` file. However, Ionic projects can also be customized using [Sass](http://sass-lang.com/), which gives developers and designers "superpowers" in terms of creating and maintaining CSS. Below are two ways to setup Sass for your Ionic project (the `ionic setup sass` command simply does the manual steps for you). Once Sass has been setup for your Ionic project, then the `ionic serve` command will also watch for Sass changes.\n\n#### Setup Sass Automatically\n\n    ionic setup sass\n\n\n#### Setup Sass Manually\n\n1. Run `npm install` from the working directory of an Ionic project. This will install [gulp.js](http://gulpjs.com/) and a few handy tasks, such as [gulp-sass](https://www.npmjs.org/package/gulp-sass) and [gulp-minify-css](https://www.npmjs.org/package/gulp-minify-css).\n2. Remove `<link href="lib/ionic/css/ionic.css" rel="stylesheet">` from the `<head>` of the root `index.html` file.\n3. Remove `<link href="css/style.css" rel="stylesheet">` from the `<head>` of the root `index.html` file.\n4. Add `<link href="css/ionic.app.css" rel="stylesheet">` to the `<head>` of the root `index.html` file.\n5. In the `ionic.project` file, add the JavaScript property `"gulpStartupTasks": ["sass", "watch"]` (this can also be customized to whatever gulp tasks you\'d like).\n',
+35 silly resolved     readmeFilename: 'README.md',
+35 silly resolved     _id: 'ionic@1.2.13',
+35 silly resolved     _from: 'ionic' } ]
+36 info install ionic@1.2.13 into C:\Users\Piyush\AppData\Roaming\npm
+37 info installOne ionic@1.2.13
+38 verbose from cache C:\Users\Piyush\AppData\Roaming\npm-cache\ionic\1.2.13\package\package.json
+39 info C:\Users\Piyush\AppData\Roaming\npm\node_modules\ionic unbuild
+40 verbose read json C:\Users\Piyush\AppData\Roaming\npm\node_modules\ionic\package.json
+41 verbose tar unpack C:\Users\Piyush\AppData\Roaming\npm-cache\ionic\1.2.13\package.tgz
+42 silly lockFile 8707c15e-a-Roaming-npm-node-modules-ionic C:\Users\Piyush\AppData\Roaming\npm\node_modules\ionic
+43 verbose lock C:\Users\Piyush\AppData\Roaming\npm\node_modules\ionic C:\Users\Piyush\AppData\Roaming\npm-cache\8707c15e-a-Roaming-npm-node-modules-ionic.lock
+44 silly gunzTarPerm modes [ '755', '644' ]
+45 silly gunzTarPerm extractEntry package.json
+46 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+47 silly gunzTarPerm extractEntry .npmignore
+48 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+49 silly gunzTarPerm extractEntry README.md
+50 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+51 silly gunzTarPerm extractEntry LICENSE
+52 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+53 silly gunzTarPerm extractEntry .gitattributes
+54 silly gunzTarPerm modified mode [ '.gitattributes', 438, 420 ]
+55 silly gunzTarPerm extractEntry bin/ionic
+56 silly gunzTarPerm modified mode [ 'bin/ionic', 438, 420 ]
+57 silly gunzTarPerm extractEntry CHANGELOG.md
+58 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 438, 420 ]
+59 silly gunzTarPerm extractEntry lib/ionic.js
+60 silly gunzTarPerm modified mode [ 'lib/ionic.js', 438, 420 ]
+61 silly gunzTarPerm extractEntry lib/hooks/after_prepare/010_add_platform_class.js
+62 silly gunzTarPerm modified mode [ 'lib/hooks/after_prepare/010_add_platform_class.js', 438, 420 ]
+63 silly gunzTarPerm extractEntry lib/ionic/add.js
+64 silly gunzTarPerm modified mode [ 'lib/ionic/add.js', 438, 420 ]
+65 silly gunzTarPerm extractEntry lib/ionic/cordova.js
+66 silly gunzTarPerm modified mode [ 'lib/ionic/cordova.js', 438, 420 ]
+67 silly gunzTarPerm extractEntry lib/ionic/lib.js
+68 silly gunzTarPerm modified mode [ 'lib/ionic/lib.js', 438, 420 ]
+69 silly gunzTarPerm extractEntry lib/ionic/login.js
+70 silly gunzTarPerm modified mode [ 'lib/ionic/login.js', 438, 420 ]
+71 silly gunzTarPerm extractEntry lib/ionic/config.js
+72 silly gunzTarPerm modified mode [ 'lib/ionic/config.js', 438, 420 ]
+73 silly gunzTarPerm extractEntry lib/ionic/app.js
+74 silly gunzTarPerm modified mode [ 'lib/ionic/app.js', 438, 420 ]
+75 silly gunzTarPerm extractEntry lib/ionic/serve.js
+76 silly gunzTarPerm modified mode [ 'lib/ionic/serve.js', 438, 420 ]
+77 silly gunzTarPerm extractEntry lib/ionic/service.js
+78 silly gunzTarPerm modified mode [ 'lib/ionic/service.js', 438, 420 ]
+79 silly gunzTarPerm extractEntry lib/ionic/setup.js
+80 silly gunzTarPerm modified mode [ 'lib/ionic/setup.js', 438, 420 ]
+81 silly gunzTarPerm extractEntry lib/ionic/start.js
+82 silly gunzTarPerm modified mode [ 'lib/ionic/start.js', 438, 420 ]
+83 silly gunzTarPerm extractEntry lib/ionic/bower.js
+84 silly gunzTarPerm modified mode [ 'lib/ionic/bower.js', 438, 420 ]
+85 silly gunzTarPerm extractEntry lib/ionic/stats.js
+86 silly gunzTarPerm modified mode [ 'lib/ionic/stats.js', 438, 420 ]
+87 silly gunzTarPerm extractEntry lib/ionic/task.js
+88 silly gunzTarPerm modified mode [ 'lib/ionic/task.js', 438, 420 ]
+89 silly gunzTarPerm extractEntry lib/ionic/store.js
+90 silly gunzTarPerm modified mode [ 'lib/ionic/store.js', 438, 420 ]
+91 silly gunzTarPerm extractEntry lib/ionic/package.js
+92 silly gunzTarPerm modified mode [ 'lib/ionic/package.js', 438, 420 ]
+93 silly gunzTarPerm extractEntry lib/ionic/upload.js
+94 silly gunzTarPerm modified mode [ 'lib/ionic/upload.js', 438, 420 ]
+95 silly gunzTarPerm extractEntry lib/ionic/project.js
+96 silly gunzTarPerm modified mode [ 'lib/ionic/project.js', 438, 420 ]
+97 silly gunzTarPerm extractEntry lib/ionic/assets/preview.html
+98 silly gunzTarPerm modified mode [ 'lib/ionic/assets/preview.html', 438, 420 ]
+99 silly gunzTarPerm extractEntry npm-shrinkwrap.json
+100 silly gunzTarPerm modified mode [ 'npm-shrinkwrap.json', 438, 420 ]
+101 verbose read json C:\Users\Piyush\AppData\Roaming\npm\node_modules\ionic\package.json
+102 silly lockFile 8707c15e-a-Roaming-npm-node-modules-ionic C:\Users\Piyush\AppData\Roaming\npm\node_modules\ionic
+103 info preinstall ionic@1.2.13
+104 verbose from cache C:\Users\Piyush\AppData\Roaming\npm\node_modules\ionic\package.json
+105 info shrinkwrap file "C:\\Users\\Piyush\\AppData\\Roaming\\npm\\node_modules\\ionic\\npm-shrinkwrap.json"
+106 verbose readDependencies returned deps { archiver: 'archiver@0.5.1',
+106 verbose readDependencies returned deps   colors: 'colors@0.6.2',
+106 verbose readDependencies returned deps   connect: 'connect@3.1.1',
+106 verbose readDependencies returned deps   'connect-livereload': 'connect-livereload@0.4.0',
+106 verbose readDependencies returned deps   'cross-spawn': 'cross-spawn@0.2.3',
+106 verbose readDependencies returned deps   'event-stream': 'event-stream@>=3.0.0 <3.1.0',
+106 verbose readDependencies returned deps   finalhandler: 'finalhandler@0.2.0',
+106 verbose readDependencies returned deps   'form-data': 'form-data@0.1.4',
+106 verbose readDependencies returned deps   gulp: 'gulp@3.8.8',
+106 verbose readDependencies returned deps   ncp: 'ncp@0.4.2',
+106 verbose readDependencies returned deps   npm: 'npm@2.1.3',
+106 verbose readDependencies returned deps   open: 'open@0.0.5',
+106 verbose readDependencies returned deps   optimist: 'optimist@0.6.0',
+106 verbose readDependencies returned deps   progress: 'progress@1.1.7',
+106 verbose readDependencies returned deps   prompt: 'prompt@0.2.12',
+106 verbose readDependencies returned deps   'proxy-middleware': 'proxy-middleware@>=0.7.0 <0.8.0',
+106 verbose readDependencies returned deps   q: 'q@1.0.1',
+106 verbose readDependencies returned deps   request: 'request@2.27.0',
+106 verbose readDependencies returned deps   'serve-static': 'serve-static@1.7.1',
+106 verbose readDependencies returned deps   shelljs: 'shelljs@0.2.6',
+106 verbose readDependencies returned deps   'tiny-lr-fork': 'tiny-lr-fork@0.0.5',
+106 verbose readDependencies returned deps   underscore: 'underscore@>=1.7.0 <1.8.0',
+106 verbose readDependencies returned deps   unzip: 'unzip@0.1.9',
+106 verbose readDependencies returned deps   'vinyl-fs': 'vinyl-fs@0.3.7',
+106 verbose readDependencies returned deps   xml2js: 'xml2js@0.4.4' }
+107 verbose from cache C:\Users\Piyush\AppData\Roaming\npm\node_modules\ionic\package.json
+108 verbose readDependencies: using existing wrap [ 'C:\\Users\\Piyush\\AppData\\Roaming\\npm\\node_modules\\ionic',
+108 verbose readDependencies: using existing wrap   { archiver:
+108 verbose readDependencies: using existing wrap      { version: '0.5.1',
+108 verbose readDependencies: using existing wrap        from: 'archiver@0.5.1',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/archiver/-/archiver-0.5.1.tgz',
+108 verbose readDependencies: using existing wrap        dependencies: [Object] },
+108 verbose readDependencies: using existing wrap     colors:
+108 verbose readDependencies: using existing wrap      { version: '0.6.2',
+108 verbose readDependencies: using existing wrap        from: 'colors@0.6.2',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/colors/-/colors-0.6.2.tgz' },
+108 verbose readDependencies: using existing wrap     connect:
+108 verbose readDependencies: using existing wrap      { version: '3.1.1',
+108 verbose readDependencies: using existing wrap        from: 'connect@3.1.1',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/connect/-/connect-3.1.1.tgz',
+108 verbose readDependencies: using existing wrap        dependencies: [Object] },
+108 verbose readDependencies: using existing wrap     'connect-livereload':
+108 verbose readDependencies: using existing wrap      { version: '0.4.0',
+108 verbose readDependencies: using existing wrap        from: 'connect-livereload@0.4.0',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/connect-livereload/-/connect-livereload-0.4.0.tgz' },
+108 verbose readDependencies: using existing wrap     'cross-spawn':
+108 verbose readDependencies: using existing wrap      { version: '0.2.3',
+108 verbose readDependencies: using existing wrap        from: 'cross-spawn@0.2.3',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/cross-spawn/-/cross-spawn-0.2.3.tgz',
+108 verbose readDependencies: using existing wrap        dependencies: [Object] },
+108 verbose readDependencies: using existing wrap     'event-stream':
+108 verbose readDependencies: using existing wrap      { version: '3.0.20',
+108 verbose readDependencies: using existing wrap        from: 'event-stream@>=3.0.0 <3.1.0',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/event-stream/-/event-stream-3.0.20.tgz',
+108 verbose readDependencies: using existing wrap        dependencies: [Object] },
+108 verbose readDependencies: using existing wrap     finalhandler:
+108 verbose readDependencies: using existing wrap      { version: '0.2.0',
+108 verbose readDependencies: using existing wrap        from: 'finalhandler@0.2.0',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/finalhandler/-/finalhandler-0.2.0.tgz',
+108 verbose readDependencies: using existing wrap        dependencies: [Object] },
+108 verbose readDependencies: using existing wrap     'form-data':
+108 verbose readDependencies: using existing wrap      { version: '0.1.4',
+108 verbose readDependencies: using existing wrap        from: 'form-data@0.1.4',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/form-data/-/form-data-0.1.4.tgz',
+108 verbose readDependencies: using existing wrap        dependencies: [Object] },
+108 verbose readDependencies: using existing wrap     gulp:
+108 verbose readDependencies: using existing wrap      { version: '3.8.8',
+108 verbose readDependencies: using existing wrap        from: 'gulp@3.8.8',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/gulp/-/gulp-3.8.8.tgz',
+108 verbose readDependencies: using existing wrap        dependencies: [Object] },
+108 verbose readDependencies: using existing wrap     ncp:
+108 verbose readDependencies: using existing wrap      { version: '0.4.2',
+108 verbose readDependencies: using existing wrap        from: 'ncp@0.4.2',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/ncp/-/ncp-0.4.2.tgz' },
+108 verbose readDependencies: using existing wrap     npm:
+108 verbose readDependencies: using existing wrap      { version: '2.1.3',
+108 verbose readDependencies: using existing wrap        from: 'npm@2.1.3',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/npm/-/npm-2.1.3.tgz',
+108 verbose readDependencies: using existing wrap        dependencies: [Object] },
+108 verbose readDependencies: using existing wrap     open:
+108 verbose readDependencies: using existing wrap      { version: '0.0.5',
+108 verbose readDependencies: using existing wrap        from: 'open@0.0.5',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/open/-/open-0.0.5.tgz' },
+108 verbose readDependencies: using existing wrap     optimist:
+108 verbose readDependencies: using existing wrap      { version: '0.6.0',
+108 verbose readDependencies: using existing wrap        from: 'optimist@0.6.0',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/optimist/-/optimist-0.6.0.tgz',
+108 verbose readDependencies: using existing wrap        dependencies: [Object] },
+108 verbose readDependencies: using existing wrap     progress:
+108 verbose readDependencies: using existing wrap      { version: '1.1.7',
+108 verbose readDependencies: using existing wrap        from: 'progress@1.1.7',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/progress/-/progress-1.1.7.tgz' },
+108 verbose readDependencies: using existing wrap     prompt:
+108 verbose readDependencies: using existing wrap      { version: '0.2.12',
+108 verbose readDependencies: using existing wrap        from: 'prompt@0.2.12',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/prompt/-/prompt-0.2.12.tgz',
+108 verbose readDependencies: using existing wrap        dependencies: [Object] },
+108 verbose readDependencies: using existing wrap     'proxy-middleware':
+108 verbose readDependencies: using existing wrap      { version: '0.7.0',
+108 verbose readDependencies: using existing wrap        from: 'proxy-middleware@>=0.7.0 <0.8.0',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/proxy-middleware/-/proxy-middleware-0.7.0.tgz' },
+108 verbose readDependencies: using existing wrap     q:
+108 verbose readDependencies: using existing wrap      { version: '1.0.1',
+108 verbose readDependencies: using existing wrap        from: 'q@1.0.1',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/q/-/q-1.0.1.tgz' },
+108 verbose readDependencies: using existing wrap     request:
+108 verbose readDependencies: using existing wrap      { version: '2.27.0',
+108 verbose readDependencies: using existing wrap        from: 'request@2.27.0',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/request/-/request-2.27.0.tgz',
+108 verbose readDependencies: using existing wrap        dependencies: [Object] },
+108 verbose readDependencies: using existing wrap     'serve-static':
+108 verbose readDependencies: using existing wrap      { version: '1.7.1',
+108 verbose readDependencies: using existing wrap        from: 'serve-static@1.7.1',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/serve-static/-/serve-static-1.7.1.tgz',
+108 verbose readDependencies: using existing wrap        dependencies: [Object] },
+108 verbose readDependencies: using existing wrap     shelljs:
+108 verbose readDependencies: using existing wrap      { version: '0.2.6',
+108 verbose readDependencies: using existing wrap        from: 'shelljs@0.2.6',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/shelljs/-/shelljs-0.2.6.tgz' },
+108 verbose readDependencies: using existing wrap     'tiny-lr-fork':
+108 verbose readDependencies: using existing wrap      { version: '0.0.5',
+108 verbose readDependencies: using existing wrap        from: 'tiny-lr-fork@0.0.5',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/tiny-lr-fork/-/tiny-lr-fork-0.0.5.tgz',
+108 verbose readDependencies: using existing wrap        dependencies: [Object] },
+108 verbose readDependencies: using existing wrap     underscore:
+108 verbose readDependencies: using existing wrap      { version: '1.7.0',
+108 verbose readDependencies: using existing wrap        from: 'underscore@>=1.7.0 <1.8.0',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/underscore/-/underscore-1.7.0.tgz' },
+108 verbose readDependencies: using existing wrap     unzip:
+108 verbose readDependencies: using existing wrap      { version: '0.1.9',
+108 verbose readDependencies: using existing wrap        from: 'unzip@0.1.9',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/unzip/-/unzip-0.1.9.tgz',
+108 verbose readDependencies: using existing wrap        dependencies: [Object] },
+108 verbose readDependencies: using existing wrap     'vinyl-fs':
+108 verbose readDependencies: using existing wrap      { version: '0.3.7',
+108 verbose readDependencies: using existing wrap        from: 'vinyl-fs@0.3.7',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/vinyl-fs/-/vinyl-fs-0.3.7.tgz',
+108 verbose readDependencies: using existing wrap        dependencies: [Object] },
+108 verbose readDependencies: using existing wrap     xml2js:
+108 verbose readDependencies: using existing wrap      { version: '0.4.4',
+108 verbose readDependencies: using existing wrap        from: 'xml2js@0.4.4',
+108 verbose readDependencies: using existing wrap        resolved: 'https://registry.npmjs.org/xml2js/-/xml2js-0.4.4.tgz',
+108 verbose readDependencies: using existing wrap        dependencies: [Object] } } ]
+109 verbose from wrap [ 'archiver',
+109 verbose from wrap   { version: '0.5.1',
+109 verbose from wrap     from: 'archiver@0.5.1',
+109 verbose from wrap     resolved: 'https://registry.npmjs.org/archiver/-/archiver-0.5.1.tgz',
+109 verbose from wrap     dependencies:
+109 verbose from wrap      { 'readable-stream': [Object],
+109 verbose from wrap        'zip-stream': [Object],
+109 verbose from wrap        lazystream: [Object],
+109 verbose from wrap        'file-utils': [Object],
+109 verbose from wrap        lodash: [Object] } } ]
+110 verbose from wrap [ 'colors',
+110 verbose from wrap   { version: '0.6.2',
+110 verbose from wrap     from: 'colors@0.6.2',
+110 verbose from wrap     resolved: 'https://registry.npmjs.org/colors/-/colors-0.6.2.tgz' } ]
+111 verbose from wrap [ 'connect',
+111 verbose from wrap   { version: '3.1.1',
+111 verbose from wrap     from: 'connect@3.1.1',
+111 verbose from wrap     resolved: 'https://registry.npmjs.org/connect/-/connect-3.1.1.tgz',
+111 verbose from wrap     dependencies:
+111 verbose from wrap      { debug: [Object],
+111 verbose from wrap        finalhandler: [Object],
+111 verbose from wrap        parseurl: [Object],
+111 verbose from wrap        'utils-merge': [Object] } } ]
+112 verbose from wrap [ 'connect-livereload',
+112 verbose from wrap   { version: '0.4.0',
+112 verbose from wrap     from: 'connect-livereload@0.4.0',
+112 verbose from wrap     resolved: 'https://registry.npmjs.org/connect-livereload/-/connect-livereload-0.4.0.tgz' } ]
+113 verbose from wrap [ 'cross-spawn',
+113 verbose from wrap   { version: '0.2.3',
+113 verbose from wrap     from: 'cross-spawn@0.2.3',
+113 verbose from wrap     resolved: 'https://registry.npmjs.org/cross-spawn/-/cross-spawn-0.2.3.tgz',
+113 verbose from wrap     dependencies: { 'lru-cache': [Object] } } ]
+114 verbose from wrap [ 'event-stream',
+114 verbose from wrap   { version: '3.0.20',
+114 verbose from wrap     from: 'event-stream@>=3.0.0 <3.1.0',
+114 verbose from wrap     resolved: 'https://registry.npmjs.org/event-stream/-/event-stream-3.0.20.tgz',
+114 verbose from wrap     dependencies:
+114 verbose from wrap      { through: [Object],
+114 verbose from wrap        duplexer: [Object],
+114 verbose from wrap        from: [Object],
+114 verbose from wrap        'map-stream': [Object],
+114 verbose from wrap        'pause-stream': [Object],
+114 verbose from wrap        split: [Object],
+114 verbose from wrap        'stream-combiner': [Object] } } ]
+115 verbose from wrap [ 'finalhandler',
+115 verbose from wrap   { version: '0.2.0',
+115 verbose from wrap     from: 'finalhandler@0.2.0',
+115 verbose from wrap     resolved: 'https://registry.npmjs.org/finalhandler/-/finalhandler-0.2.0.tgz',
+115 verbose from wrap     dependencies: { debug: [Object], 'escape-html': [Object] } } ]
+116 verbose from wrap [ 'form-data',
+116 verbose from wrap   { version: '0.1.4',
+116 verbose from wrap     from: 'form-data@0.1.4',
+116 verbose from wrap     resolved: 'https://registry.npmjs.org/form-data/-/form-data-0.1.4.tgz',
+116 verbose from wrap     dependencies: { 'combined-stream': [Object], mime: [Object], async: [Object] } } ]
+117 verbose from wrap [ 'gulp',
+117 verbose from wrap   { version: '3.8.8',
+117 verbose from wrap     from: 'gulp@3.8.8',
+117 verbose from wrap     resolved: 'https://registry.npmjs.org/gulp/-/gulp-3.8.8.tgz',
+117 verbose from wrap     dependencies:
+117 verbose from wrap      { archy: [Object],
+117 verbose from wrap        chalk: [Object],
+117 verbose from wrap        deprecated: [Object],
+117 verbose from wrap        'gulp-util': [Object],
+117 verbose from wrap        interpret: [Object],
+117 verbose from wrap        liftoff: [Object],
+117 verbose from wrap        minimist: [Object],
+117 verbose from wrap        orchestrator: [Object],
+117 verbose from wrap        'pretty-hrtime': [Object],
+117 verbose from wrap        semver: [Object],
+117 verbose from wrap        tildify: [Object] } } ]
+118 verbose from wrap [ 'ncp',
+118 verbose from wrap   { version: '0.4.2',
+118 verbose from wrap     from: 'ncp@0.4.2',
+118 verbose from wrap     resolved: 'https://registry.npmjs.org/ncp/-/ncp-0.4.2.tgz' } ]
+119 verbose from wrap [ 'npm',
+119 verbose from wrap   { version: '2.1.3',
+119 verbose from wrap     from: 'npm@2.1.3',
+119 verbose from wrap     resolved: 'https://registry.npmjs.org/npm/-/npm-2.1.3.tgz',
+119 verbose from wrap     dependencies:
+119 verbose from wrap      { abbrev: [Object],
+119 verbose from wrap        ansi: [Object],
+119 verbose from wrap        ansicolors: [Object],
+119 verbose from wrap        ansistyles: [Object],
+119 verbose from wrap        archy: [Object],
+119 verbose from wrap        'async-some': [Object],
+119 verbose from wrap        'block-stream': [Object],
+119 verbose from wrap        'char-spinner': [Object],
+119 verbose from wrap        'child-process-close': [Object],
+119 verbose from wrap        chmodr: [Object],
+119 verbose from wrap        chownr: [Object],
+119 verbose from wrap        'cmd-shim': [Object],
+119 verbose from wrap        columnify: [Object],
+119 verbose from wrap        dezalgo: [Object],
+119 verbose from wrap        editor: [Object],
+119 verbose from wrap        'fs-vacuum': [Object],
+119 verbose from wrap        'fs-write-stream-atomic': [Object],
+119 verbose from wrap        fstream: [Object],
+119 verbose from wrap        'fstream-npm': [Object],
+119 verbose from wrap        'github-url-from-git': [Object],
+119 verbose from wrap        'github-url-from-username-repo': [Object],
+119 verbose from wrap        glob: [Object],
+119 verbose from wrap        'graceful-fs': [Object],
+119 verbose from wrap        inflight: [Object],
+119 verbose from wrap        inherits: [Object],
+119 verbose from wrap        ini: [Object],
+119 verbose from wrap        'init-package-json': [Object],
+119 verbose from wrap        lockfile: [Object],
+119 verbose from wrap        'lru-cache': [Object],
+119 verbose from wrap        minimatch: [Object],
+119 verbose from wrap        mkdirp: [Object],
+119 verbose from wrap        'node-gyp': [Object],
+119 verbose from wrap        nopt: [Object],
+119 verbose from wrap        'normalize-package-data': [Object],
+119 verbose from wrap        'npm-cache-filename': [Object],
+119 verbose from wrap        'npm-install-checks': [Object],
+119 verbose from wrap        'npm-package-arg': [Object],
+119 verbose from wrap        'npm-registry-client': [Object],
+119 verbose from wrap        'npm-user-validate': [Object],
+119 verbose from wrap        npmconf: [Object],
+119 verbose from wrap        npmlog: [Object],
+119 verbose from wrap        once: [Object],
+119 verbose from wrap        opener: [Object],
+119 verbose from wrap        osenv: [Object],
+119 verbose from wrap        'path-is-inside': [Object],
+119 verbose from wrap        read: [Object],
+119 verbose from wrap        'read-installed': [Object],
+119 verbose from wrap        'read-package-json': [Object],
+119 verbose from wrap        'readable-stream': [Object],
+119 verbose from wrap        'realize-package-specifier': [Object],
+119 verbose from wrap        request: [Object],
+119 verbose from wrap        retry: [Object],
+119 verbose from wrap        rimraf: [Object],
+119 verbose from wrap        semver: [Object],
+119 verbose from wrap        sha: [Object],
+119 verbose from wrap        slide: [Object],
+119 verbose from wrap        'sorted-object': [Object],
+119 verbose from wrap        tar: [Object],
+119 verbose from wrap        'text-table': [Object],
+119 verbose from wrap        'uid-number': [Object],
+119 verbose from wrap        which: [Object],
+119 verbose from wrap        wrappy: [Object],
+119 verbose from wrap        'write-file-atomic': [Object] } } ]
+120 verbose from wrap [ 'open',
+120 verbose from wrap   { version: '0.0.5',
+120 verbose from wrap     from: 'open@0.0.5',
+120 verbose from wrap     resolved: 'https://registry.npmjs.org/open/-/open-0.0.5.tgz' } ]
+121 verbose from wrap [ 'optimist',
+121 verbose from wrap   { version: '0.6.0',
+121 verbose from wrap     from: 'optimist@0.6.0',
+121 verbose from wrap     resolved: 'https://registry.npmjs.org/optimist/-/optimist-0.6.0.tgz',
+121 verbose from wrap     dependencies: { wordwrap: [Object], minimist: [Object] } } ]
+122 verbose from wrap [ 'progress',
+122 verbose from wrap   { version: '1.1.7',
+122 verbose from wrap     from: 'progress@1.1.7',
+122 verbose from wrap     resolved: 'https://registry.npmjs.org/progress/-/progress-1.1.7.tgz' } ]
+123 verbose from wrap [ 'prompt',
+123 verbose from wrap   { version: '0.2.12',
+123 verbose from wrap     from: 'prompt@0.2.12',
+123 verbose from wrap     resolved: 'https://registry.npmjs.org/prompt/-/prompt-0.2.12.tgz',
+123 verbose from wrap     dependencies:
+123 verbose from wrap      { pkginfo: [Object],
+123 verbose from wrap        read: [Object],
+123 verbose from wrap        revalidator: [Object],
+123 verbose from wrap        utile: [Object],
+123 verbose from wrap        winston: [Object] } } ]
+124 verbose from wrap [ 'proxy-middleware',
+124 verbose from wrap   { version: '0.7.0',
+124 verbose from wrap     from: 'proxy-middleware@>=0.7.0 <0.8.0',
+124 verbose from wrap     resolved: 'https://registry.npmjs.org/proxy-middleware/-/proxy-middleware-0.7.0.tgz' } ]
+125 verbose from wrap [ 'q',
+125 verbose from wrap   { version: '1.0.1',
+125 verbose from wrap     from: 'q@1.0.1',
+125 verbose from wrap     resolved: 'https://registry.npmjs.org/q/-/q-1.0.1.tgz' } ]
+126 verbose from wrap [ 'request',
+126 verbose from wrap   { version: '2.27.0',
+126 verbose from wrap     from: 'request@2.27.0',
+126 verbose from wrap     resolved: 'https://registry.npmjs.org/request/-/request-2.27.0.tgz',
+126 verbose from wrap     dependencies:
+126 verbose from wrap      { qs: [Object],
+126 verbose from wrap        'json-stringify-safe': [Object],
+126 verbose from wrap        'forever-agent': [Object],
+126 verbose from wrap        'tunnel-agent': [Object],
+126 verbose from wrap        'http-signature': [Object],
+126 verbose from wrap        hawk: [Object],
+126 verbose from wrap        'aws-sign': [Object],
+126 verbose from wrap        'oauth-sign': [Object],
+126 verbose from wrap        'cookie-jar': [Object],
+126 verbose from wrap        'node-uuid': [Object],
+126 verbose from wrap        mime: [Object] } } ]
+127 verbose from wrap [ 'serve-static',
+127 verbose from wrap   { version: '1.7.1',
+127 verbose from wrap     from: 'serve-static@1.7.1',
+127 verbose from wrap     resolved: 'https://registry.npmjs.org/serve-static/-/serve-static-1.7.1.tgz',
+127 verbose from wrap     dependencies:
+127 verbose from wrap      { 'escape-html': [Object],
+127 verbose from wrap        parseurl: [Object],
+127 verbose from wrap        send: [Object],
+127 verbose from wrap        'utils-merge': [Object] } } ]
+128 verbose from wrap [ 'shelljs',
+128 verbose from wrap   { version: '0.2.6',
+128 verbose from wrap     from: 'shelljs@0.2.6',
+128 verbose from wrap     resolved: 'https://registry.npmjs.org/shelljs/-/shelljs-0.2.6.tgz' } ]
+129 verbose from wrap [ 'tiny-lr-fork',
+129 verbose from wrap   { version: '0.0.5',
+129 verbose from wrap     from: 'tiny-lr-fork@0.0.5',
+129 verbose from wrap     resolved: 'https://registry.npmjs.org/tiny-lr-fork/-/tiny-lr-fork-0.0.5.tgz',
+129 verbose from wrap     dependencies:
+129 verbose from wrap      { qs: [Object],
+129 verbose from wrap        'faye-websocket': [Object],
+129 verbose from wrap        noptify: [Object],
+129 verbose from wrap        debug: [Object] } } ]
+130 verbose from wrap [ 'underscore',
+130 verbose from wrap   { version: '1.7.0',
+130 verbose from wrap     from: 'underscore@>=1.7.0 <1.8.0',
+130 verbose from wrap     resolved: 'https://registry.npmjs.org/underscore/-/underscore-1.7.0.tgz' } ]
+131 verbose from wrap [ 'unzip',
+131 verbose from wrap   { version: '0.1.9',
+131 verbose from wrap     from: 'unzip@0.1.9',
+131 verbose from wrap     resolved: 'https://registry.npmjs.org/unzip/-/unzip-0.1.9.tgz',
+131 verbose from wrap     dependencies:
+131 verbose from wrap      { fstream: [Object],
+131 verbose from wrap        pullstream: [Object],
+131 verbose from wrap        binary: [Object],
+131 verbose from wrap        'readable-stream': [Object],
+131 verbose from wrap        setimmediate: [Object],
+131 verbose from wrap        'match-stream': [Object] } } ]
+132 verbose from wrap [ 'vinyl-fs',
+132 verbose from wrap   { version: '0.3.7',
+132 verbose from wrap     from: 'vinyl-fs@0.3.7',
+132 verbose from wrap     resolved: 'https://registry.npmjs.org/vinyl-fs/-/vinyl-fs-0.3.7.tgz',
+132 verbose from wrap     dependencies:
+132 verbose from wrap      { 'glob-stream': [Object],
+132 verbose from wrap        'glob-watcher': [Object],
+132 verbose from wrap        'graceful-fs': [Object],
+132 verbose from wrap        lodash: [Object],
+132 verbose from wrap        mkdirp: [Object],
+132 verbose from wrap        'strip-bom': [Object],
+132 verbose from wrap        through2: [Object],
+132 verbose from wrap        vinyl: [Object] } } ]
+133 verbose from wrap [ 'xml2js',
+133 verbose from wrap   { version: '0.4.4',
+133 verbose from wrap     from: 'xml2js@0.4.4',
+133 verbose from wrap     resolved: 'https://registry.npmjs.org/xml2js/-/xml2js-0.4.4.tgz',
+133 verbose from wrap     dependencies: { sax: [Object], xmlbuilder: [Object] } } ]
+134 verbose readDependencies returned deps { archiver: 'archiver@0.5.1',
+134 verbose readDependencies returned deps   colors: 'colors@0.6.2',
+134 verbose readDependencies returned deps   connect: 'connect@3.1.1',
+134 verbose readDependencies returned deps   'connect-livereload': 'connect-livereload@0.4.0',
+134 verbose readDependencies returned deps   'cross-spawn': 'cross-spawn@0.2.3',
+134 verbose readDependencies returned deps   'event-stream': 'event-stream@>=3.0.0 <3.1.0',
+134 verbose readDependencies returned deps   finalhandler: 'finalhandler@0.2.0',
+134 verbose readDependencies returned deps   'form-data': 'form-data@0.1.4',
+134 verbose readDependencies returned deps   gulp: 'gulp@3.8.8',
+134 verbose readDependencies returned deps   ncp: 'ncp@0.4.2',
+134 verbose readDependencies returned deps   npm: 'npm@2.1.3',
+134 verbose readDependencies returned deps   open: 'open@0.0.5',
+134 verbose readDependencies returned deps   optimist: 'optimist@0.6.0',
+134 verbose readDependencies returned deps   progress: 'progress@1.1.7',
+134 verbose readDependencies returned deps   prompt: 'prompt@0.2.12',
+134 verbose readDependencies returned deps   'proxy-middleware': 'proxy-middleware@>=0.7.0 <0.8.0',
+134 verbose readDependencies returned deps   q: 'q@1.0.1',
+134 verbose readDependencies returned deps   request: 'request@2.27.0',
+134 verbose readDependencies returned deps   'serve-static': 'serve-static@1.7.1',
+134 verbose readDependencies returned deps   shelljs: 'shelljs@0.2.6',
+134 verbose readDependencies returned deps   'tiny-lr-fork': 'tiny-lr-fork@0.0.5',
+134 verbose readDependencies returned deps   underscore: 'underscore@>=1.7.0 <1.8.0',
+134 verbose readDependencies returned deps   unzip: 'unzip@0.1.9',
+134 verbose readDependencies returned deps   'vinyl-fs': 'vinyl-fs@0.3.7',
+134 verbose readDependencies returned deps   xml2js: 'xml2js@0.4.4' }
+135 verbose shrinkwrap resolving connect-livereload@0.4.0 to connect-livereload@connect-livereload@0.4.0
+136 verbose cache add [ 'connect-livereload@connect-livereload@0.4.0', null ]
+137 silly cache add name=undefined spec="connect-livereload@connect-livereload@0.4.0" args=["connect-livereload@connect-livereload@0.4.0",null]
+138 verbose parsed url { pathname: 'connect-livereload@connect-livereload@0.4.0',
+138 verbose parsed url   path: 'connect-livereload@connect-livereload@0.4.0',
+138 verbose parsed url   href: 'connect-livereload@connect-livereload@0.4.0' }
+139 silly cache add name="connect-livereload" spec="connect-livereload@0.4.0" args=["connect-livereload","connect-livereload@0.4.0"]
+140 verbose parsed url { pathname: 'connect-livereload@0.4.0',
+140 verbose parsed url   path: 'connect-livereload@0.4.0',
+140 verbose parsed url   href: 'connect-livereload@0.4.0' }
+141 verbose addNamed [ 'connect-livereload', 'connect-livereload@0.4.0' ]
+142 verbose addNamed [ null, null ]
+143 silly lockFile c0184f76-ereload-connect-livereload-0-4-0 connect-livereload@connect-livereload@0.4.0
+144 verbose lock connect-livereload@connect-livereload@0.4.0 C:\Users\Piyush\AppData\Roaming\npm-cache\c0184f76-ereload-connect-livereload-0-4-0.lock
+145 verbose shrinkwrap resolving cross-spawn@0.2.3 to cross-spawn@cross-spawn@0.2.3
+146 verbose cache add [ 'cross-spawn@cross-spawn@0.2.3', null ]
+147 silly cache add name=undefined spec="cross-spawn@cross-spawn@0.2.3" args=["cross-spawn@cross-spawn@0.2.3",null]
+148 verbose parsed url { pathname: 'cross-spawn@cross-spawn@0.2.3',
+148 verbose parsed url   path: 'cross-spawn@cross-spawn@0.2.3',
+148 verbose parsed url   href: 'cross-spawn@cross-spawn@0.2.3' }
+149 silly cache add name="cross-spawn" spec="cross-spawn@0.2.3" args=["cross-spawn","cross-spawn@0.2.3"]
+150 verbose parsed url { pathname: 'cross-spawn@0.2.3',
+150 verbose parsed url   path: 'cross-spawn@0.2.3',
+150 verbose parsed url   href: 'cross-spawn@0.2.3' }
+151 verbose addNamed [ 'cross-spawn', 'cross-spawn@0.2.3' ]
+152 verbose addNamed [ null, null ]
+153 silly lockFile 3ab24a32-cross-spawn-cross-spawn-0-2-3 cross-spawn@cross-spawn@0.2.3
+154 verbose lock cross-spawn@cross-spawn@0.2.3 C:\Users\Piyush\AppData\Roaming\npm-cache\3ab24a32-cross-spawn-cross-spawn-0-2-3.lock
+155 verbose shrinkwrap resolving event-stream@>=3.0.0 <3.1.0 to event-stream@event-stream@>=3.0.0 <3.1.0
+156 verbose cache add [ 'event-stream@event-stream@>=3.0.0 <3.1.0', null ]
+157 silly cache add name=undefined spec="event-stream@event-stream@>=3.0.0 <3.1.0" args=["event-stream@event-stream@>=3.0.0 <3.1.0",null]
+158 verbose parsed url { pathname: 'event-stream@event-stream@%3E=3.0.0%20%3C3.1.0',
+158 verbose parsed url   path: 'event-stream@event-stream@%3E=3.0.0%20%3C3.1.0',
+158 verbose parsed url   href: 'event-stream@event-stream@%3E=3.0.0%20%3C3.1.0' }
+159 silly cache add name="event-stream" spec="event-stream@>=3.0.0 <3.1.0" args=["event-stream","event-stream@>=3.0.0 <3.1.0"]
+160 verbose parsed url { pathname: 'event-stream@%3E=3.0.0%20%3C3.1.0',
+160 verbose parsed url   path: 'event-stream@%3E=3.0.0%20%3C3.1.0',
+160 verbose parsed url   href: 'event-stream@%3E=3.0.0%20%3C3.1.0' }
+161 verbose addNamed [ 'event-stream', 'event-stream@>=3.0.0 <3.1.0' ]
+162 verbose addNamed [ null, '<3.1.0' ]
+163 silly lockFile 57179c0b--stream-event-stream-3-0-0-3-1-0 event-stream@event-stream@>=3.0.0 <3.1.0
+164 verbose lock event-stream@event-stream@>=3.0.0 <3.1.0 C:\Users\Piyush\AppData\Roaming\npm-cache\57179c0b--stream-event-stream-3-0-0-3-1-0.lock
+165 verbose shrinkwrap resolving finalhandler@0.2.0 to finalhandler@finalhandler@0.2.0
+166 verbose cache add [ 'finalhandler@finalhandler@0.2.0', null ]
+167 silly cache add name=undefined spec="finalhandler@finalhandler@0.2.0" args=["finalhandler@finalhandler@0.2.0",null]
+168 verbose parsed url { pathname: 'finalhandler@finalhandler@0.2.0',
+168 verbose parsed url   path: 'finalhandler@finalhandler@0.2.0',
+168 verbose parsed url   href: 'finalhandler@finalhandler@0.2.0' }
+169 silly cache add name="finalhandler" spec="finalhandler@0.2.0" args=["finalhandler","finalhandler@0.2.0"]
+170 verbose parsed url { pathname: 'finalhandler@0.2.0',
+170 verbose parsed url   path: 'finalhandler@0.2.0',
+170 verbose parsed url   href: 'finalhandler@0.2.0' }
+171 verbose addNamed [ 'finalhandler', 'finalhandler@0.2.0' ]
+172 verbose addNamed [ null, null ]
+173 silly lockFile ba1ba4f0-finalhandler-finalhandler-0-2-0 finalhandler@finalhandler@0.2.0
+174 verbose lock finalhandler@finalhandler@0.2.0 C:\Users\Piyush\AppData\Roaming\npm-cache\ba1ba4f0-finalhandler-finalhandler-0-2-0.lock
+175 verbose shrinkwrap resolving form-data@0.1.4 to form-data@form-data@0.1.4
+176 verbose cache add [ 'form-data@form-data@0.1.4', null ]
+177 silly cache add name=undefined spec="form-data@form-data@0.1.4" args=["form-data@form-data@0.1.4",null]
+178 verbose parsed url { pathname: 'form-data@form-data@0.1.4',
+178 verbose parsed url   path: 'form-data@form-data@0.1.4',
+178 verbose parsed url   href: 'form-data@form-data@0.1.4' }
+179 silly cache add name="form-data" spec="form-data@0.1.4" args=["form-data","form-data@0.1.4"]
+180 verbose parsed url { pathname: 'form-data@0.1.4',
+180 verbose parsed url   path: 'form-data@0.1.4',
+180 verbose parsed url   href: 'form-data@0.1.4' }
+181 verbose addNamed [ 'form-data', 'form-data@0.1.4' ]
+182 verbose addNamed [ null, null ]
+183 silly lockFile 3c4bcef7-form-data-form-data-0-1-4 form-data@form-data@0.1.4
+184 verbose lock form-data@form-data@0.1.4 C:\Users\Piyush\AppData\Roaming\npm-cache\3c4bcef7-form-data-form-data-0-1-4.lock
+185 verbose shrinkwrap resolving gulp@3.8.8 to gulp@gulp@3.8.8
+186 verbose cache add [ 'gulp@gulp@3.8.8', null ]
+187 silly cache add name=undefined spec="gulp@gulp@3.8.8" args=["gulp@gulp@3.8.8",null]
+188 verbose parsed url { pathname: 'gulp@gulp@3.8.8',
+188 verbose parsed url   path: 'gulp@gulp@3.8.8',
+188 verbose parsed url   href: 'gulp@gulp@3.8.8' }
+189 silly cache add name="gulp" spec="gulp@3.8.8" args=["gulp","gulp@3.8.8"]
+190 verbose parsed url { pathname: 'gulp@3.8.8',
+190 verbose parsed url   path: 'gulp@3.8.8',
+190 verbose parsed url   href: 'gulp@3.8.8' }
+191 verbose addNamed [ 'gulp', 'gulp@3.8.8' ]
+192 verbose addNamed [ null, null ]
+193 silly lockFile 459727df-gulp-gulp-3-8-8 gulp@gulp@3.8.8
+194 verbose lock gulp@gulp@3.8.8 C:\Users\Piyush\AppData\Roaming\npm-cache\459727df-gulp-gulp-3-8-8.lock
+195 verbose shrinkwrap resolving ncp@0.4.2 to ncp@ncp@0.4.2
+196 verbose cache add [ 'ncp@ncp@0.4.2', null ]
+197 silly cache add name=undefined spec="ncp@ncp@0.4.2" args=["ncp@ncp@0.4.2",null]
+198 verbose parsed url { pathname: 'ncp@ncp@0.4.2',
+198 verbose parsed url   path: 'ncp@ncp@0.4.2',
+198 verbose parsed url   href: 'ncp@ncp@0.4.2' }
+199 silly cache add name="ncp" spec="ncp@0.4.2" args=["ncp","ncp@0.4.2"]
+200 verbose parsed url { pathname: 'ncp@0.4.2', path: 'ncp@0.4.2', href: 'ncp@0.4.2' }
+201 verbose addNamed [ 'ncp', 'ncp@0.4.2' ]
+202 verbose addNamed [ null, null ]
+203 silly lockFile 68aae1b6-ncp-ncp-0-4-2 ncp@ncp@0.4.2
+204 verbose lock ncp@ncp@0.4.2 C:\Users\Piyush\AppData\Roaming\npm-cache\68aae1b6-ncp-ncp-0-4-2.lock
+205 verbose shrinkwrap resolving npm@2.1.3 to npm@npm@2.1.3
+206 verbose cache add [ 'npm@npm@2.1.3', null ]
+207 silly cache add name=undefined spec="npm@npm@2.1.3" args=["npm@npm@2.1.3",null]
+208 verbose parsed url { pathname: 'npm@npm@2.1.3',
+208 verbose parsed url   path: 'npm@npm@2.1.3',
+208 verbose parsed url   href: 'npm@npm@2.1.3' }
+209 silly cache add name="npm" spec="npm@2.1.3" args=["npm","npm@2.1.3"]
+210 verbose parsed url { pathname: 'npm@2.1.3', path: 'npm@2.1.3', href: 'npm@2.1.3' }
+211 verbose addNamed [ 'npm', 'npm@2.1.3' ]
+212 verbose addNamed [ null, null ]
+213 silly lockFile d53f04e0-npm-npm-2-1-3 npm@npm@2.1.3
+214 verbose lock npm@npm@2.1.3 C:\Users\Piyush\AppData\Roaming\npm-cache\d53f04e0-npm-npm-2-1-3.lock
+215 verbose shrinkwrap resolving open@0.0.5 to open@open@0.0.5
+216 verbose cache add [ 'open@open@0.0.5', null ]
+217 silly cache add name=undefined spec="open@open@0.0.5" args=["open@open@0.0.5",null]
+218 verbose parsed url { pathname: 'open@open@0.0.5',
+218 verbose parsed url   path: 'open@open@0.0.5',
+218 verbose parsed url   href: 'open@open@0.0.5' }
+219 silly cache add name="open" spec="open@0.0.5" args=["open","open@0.0.5"]
+220 verbose parsed url { pathname: 'open@0.0.5',
+220 verbose parsed url   path: 'open@0.0.5',
+220 verbose parsed url   href: 'open@0.0.5' }
+221 verbose addNamed [ 'open', 'open@0.0.5' ]
+222 verbose addNamed [ null, null ]
+223 silly lockFile c33c7153-open-open-0-0-5 open@open@0.0.5
+224 verbose lock open@open@0.0.5 C:\Users\Piyush\AppData\Roaming\npm-cache\c33c7153-open-open-0-0-5.lock
+225 verbose shrinkwrap resolving optimist@0.6.0 to optimist@optimist@0.6.0
+226 verbose cache add [ 'optimist@optimist@0.6.0', null ]
+227 silly cache add name=undefined spec="optimist@optimist@0.6.0" args=["optimist@optimist@0.6.0",null]
+228 verbose parsed url { pathname: 'optimist@optimist@0.6.0',
+228 verbose parsed url   path: 'optimist@optimist@0.6.0',
+228 verbose parsed url   href: 'optimist@optimist@0.6.0' }
+229 silly cache add name="optimist" spec="optimist@0.6.0" args=["optimist","optimist@0.6.0"]
+230 verbose parsed url { pathname: 'optimist@0.6.0',
+230 verbose parsed url   path: 'optimist@0.6.0',
+230 verbose parsed url   href: 'optimist@0.6.0' }
+231 verbose addNamed [ 'optimist', 'optimist@0.6.0' ]
+232 verbose addNamed [ null, null ]
+233 silly lockFile 4be7ab77-optimist-optimist-0-6-0 optimist@optimist@0.6.0
+234 verbose lock optimist@optimist@0.6.0 C:\Users\Piyush\AppData\Roaming\npm-cache\4be7ab77-optimist-optimist-0-6-0.lock
+235 verbose shrinkwrap resolving progress@1.1.7 to progress@progress@1.1.7
+236 verbose cache add [ 'progress@progress@1.1.7', null ]
+237 silly cache add name=undefined spec="progress@progress@1.1.7" args=["progress@progress@1.1.7",null]
+238 verbose parsed url { pathname: 'progress@progress@1.1.7',
+238 verbose parsed url   path: 'progress@progress@1.1.7',
+238 verbose parsed url   href: 'progress@progress@1.1.7' }
+239 silly cache add name="progress" spec="progress@1.1.7" args=["progress","progress@1.1.7"]
+240 verbose parsed url { pathname: 'progress@1.1.7',
+240 verbose parsed url   path: 'progress@1.1.7',
+240 verbose parsed url   href: 'progress@1.1.7' }
+241 verbose addNamed [ 'progress', 'progress@1.1.7' ]
+242 verbose addNamed [ null, null ]
+243 silly lockFile 5db4ba26-progress-progress-1-1-7 progress@progress@1.1.7
+244 verbose lock progress@progress@1.1.7 C:\Users\Piyush\AppData\Roaming\npm-cache\5db4ba26-progress-progress-1-1-7.lock
+245 verbose shrinkwrap resolving prompt@0.2.12 to prompt@prompt@0.2.12
+246 verbose cache add [ 'prompt@prompt@0.2.12', null ]
+247 silly cache add name=undefined spec="prompt@prompt@0.2.12" args=["prompt@prompt@0.2.12",null]
+248 verbose parsed url { pathname: 'prompt@prompt@0.2.12',
+248 verbose parsed url   path: 'prompt@prompt@0.2.12',
+248 verbose parsed url   href: 'prompt@prompt@0.2.12' }
+249 silly cache add name="prompt" spec="prompt@0.2.12" args=["prompt","prompt@0.2.12"]
+250 verbose parsed url { pathname: 'prompt@0.2.12',
+250 verbose parsed url   path: 'prompt@0.2.12',
+250 verbose parsed url   href: 'prompt@0.2.12' }
+251 verbose addNamed [ 'prompt', 'prompt@0.2.12' ]
+252 verbose addNamed [ null, null ]
+253 silly lockFile f5395279-prompt-prompt-0-2-12 prompt@prompt@0.2.12
+254 verbose lock prompt@prompt@0.2.12 C:\Users\Piyush\AppData\Roaming\npm-cache\f5395279-prompt-prompt-0-2-12.lock
+255 verbose shrinkwrap resolving proxy-middleware@>=0.7.0 <0.8.0 to proxy-middleware@proxy-middleware@>=0.7.0 <0.8.0
+256 verbose cache add [ 'proxy-middleware@proxy-middleware@>=0.7.0 <0.8.0', null ]
+257 silly cache add name=undefined spec="proxy-middleware@proxy-middleware@>=0.7.0 <0.8.0" args=["proxy-middleware@proxy-middleware@>=0.7.0 <0.8.0",null]
+258 verbose parsed url { pathname: 'proxy-middleware@proxy-middleware@%3E=0.7.0%20%3C0.8.0',
+258 verbose parsed url   path: 'proxy-middleware@proxy-middleware@%3E=0.7.0%20%3C0.8.0',
+258 verbose parsed url   href: 'proxy-middleware@proxy-middleware@%3E=0.7.0%20%3C0.8.0' }
+259 silly cache add name="proxy-middleware" spec="proxy-middleware@>=0.7.0 <0.8.0" args=["proxy-middleware","proxy-middleware@>=0.7.0 <0.8.0"]
+260 verbose parsed url { pathname: 'proxy-middleware@%3E=0.7.0%20%3C0.8.0',
+260 verbose parsed url   path: 'proxy-middleware@%3E=0.7.0%20%3C0.8.0',
+260 verbose parsed url   href: 'proxy-middleware@%3E=0.7.0%20%3C0.8.0' }
+261 verbose addNamed [ 'proxy-middleware', 'proxy-middleware@>=0.7.0 <0.8.0' ]
+262 verbose addNamed [ null, '<0.8.0' ]
+263 silly lockFile 7c92c5a0-are-proxy-middleware-0-7-0-0-8-0 proxy-middleware@proxy-middleware@>=0.7.0 <0.8.0
+264 verbose lock proxy-middleware@proxy-middleware@>=0.7.0 <0.8.0 C:\Users\Piyush\AppData\Roaming\npm-cache\7c92c5a0-are-proxy-middleware-0-7-0-0-8-0.lock
+265 verbose shrinkwrap resolving q@1.0.1 to q@q@1.0.1
+266 verbose cache add [ 'q@q@1.0.1', null ]
+267 silly cache add name=undefined spec="q@q@1.0.1" args=["q@q@1.0.1",null]
+268 verbose parsed url { pathname: 'q@q@1.0.1', path: 'q@q@1.0.1', href: 'q@q@1.0.1' }
+269 silly cache add name="q" spec="q@1.0.1" args=["q","q@1.0.1"]
+270 verbose parsed url { pathname: 'q@1.0.1', path: 'q@1.0.1', href: 'q@1.0.1' }
+271 verbose addNamed [ 'q', 'q@1.0.1' ]
+272 verbose addNamed [ null, null ]
+273 silly lockFile 6f7fefb6-q-q-1-0-1 q@q@1.0.1
+274 verbose lock q@q@1.0.1 C:\Users\Piyush\AppData\Roaming\npm-cache\6f7fefb6-q-q-1-0-1.lock
+275 silly addNameRange { name: 'event-stream', range: '<3.1.0', hasData: false }
+276 info addNameTag [ 'finalhandler', 'finalhandler@0.2.0' ]
+277 info addNameTag [ 'connect-livereload', 'connect-livereload@0.4.0' ]
+278 info addNameTag [ 'cross-spawn', 'cross-spawn@0.2.3' ]
+279 info addNameTag [ 'ncp', 'ncp@0.4.2' ]
+280 info addNameTag [ 'gulp', 'gulp@3.8.8' ]
+281 info addNameTag [ 'form-data', 'form-data@0.1.4' ]
+282 info addNameTag [ 'npm', 'npm@2.1.3' ]
+283 info addNameTag [ 'open', 'open@0.0.5' ]
+284 info addNameTag [ 'optimist', 'optimist@0.6.0' ]
+285 info addNameTag [ 'progress', 'progress@1.1.7' ]
+286 info addNameTag [ 'prompt', 'prompt@0.2.12' ]
+287 silly addNameRange { name: 'proxy-middleware', range: '<0.8.0', hasData: false }
+288 verbose shrinkwrap resolving request@2.27.0 to request@request@2.27.0
+289 verbose cache add [ 'request@request@2.27.0', null ]
+290 silly cache add name=undefined spec="request@request@2.27.0" args=["request@request@2.27.0",null]
+291 verbose parsed url { pathname: 'request@request@2.27.0',
+291 verbose parsed url   path: 'request@request@2.27.0',
+291 verbose parsed url   href: 'request@request@2.27.0' }
+292 silly cache add name="request" spec="request@2.27.0" args=["request","request@2.27.0"]
+293 verbose parsed url { pathname: 'request@2.27.0',
+293 verbose parsed url   path: 'request@2.27.0',
+293 verbose parsed url   href: 'request@2.27.0' }
+294 verbose addNamed [ 'request', 'request@2.27.0' ]
+295 verbose addNamed [ null, null ]
+296 silly lockFile 47b11d89-request-request-2-27-0 request@request@2.27.0
+297 verbose lock request@request@2.27.0 C:\Users\Piyush\AppData\Roaming\npm-cache\47b11d89-request-request-2-27-0.lock
+298 verbose shrinkwrap resolving shelljs@0.2.6 to shelljs@shelljs@0.2.6
+299 verbose cache add [ 'shelljs@shelljs@0.2.6', null ]
+300 silly cache add name=undefined spec="shelljs@shelljs@0.2.6" args=["shelljs@shelljs@0.2.6",null]
+301 verbose parsed url { pathname: 'shelljs@shelljs@0.2.6',
+301 verbose parsed url   path: 'shelljs@shelljs@0.2.6',
+301 verbose parsed url   href: 'shelljs@shelljs@0.2.6' }
+302 silly cache add name="shelljs" spec="shelljs@0.2.6" args=["shelljs","shelljs@0.2.6"]
+303 verbose parsed url { pathname: 'shelljs@0.2.6',
+303 verbose parsed url   path: 'shelljs@0.2.6',
+303 verbose parsed url   href: 'shelljs@0.2.6' }
+304 verbose addNamed [ 'shelljs', 'shelljs@0.2.6' ]
+305 verbose addNamed [ null, null ]
+306 silly lockFile 6d4a027e-shelljs-shelljs-0-2-6 shelljs@shelljs@0.2.6
+307 verbose lock shelljs@shelljs@0.2.6 C:\Users\Piyush\AppData\Roaming\npm-cache\6d4a027e-shelljs-shelljs-0-2-6.lock
+308 verbose shrinkwrap resolving vinyl-fs@0.3.7 to vinyl-fs@vinyl-fs@0.3.7
+309 verbose cache add [ 'vinyl-fs@vinyl-fs@0.3.7', null ]
+310 silly cache add name=undefined spec="vinyl-fs@vinyl-fs@0.3.7" args=["vinyl-fs@vinyl-fs@0.3.7",null]
+311 verbose parsed url { pathname: 'vinyl-fs@vinyl-fs@0.3.7',
+311 verbose parsed url   path: 'vinyl-fs@vinyl-fs@0.3.7',
+311 verbose parsed url   href: 'vinyl-fs@vinyl-fs@0.3.7' }
+312 silly cache add name="vinyl-fs" spec="vinyl-fs@0.3.7" args=["vinyl-fs","vinyl-fs@0.3.7"]
+313 verbose parsed url { pathname: 'vinyl-fs@0.3.7',
+313 verbose parsed url   path: 'vinyl-fs@0.3.7',
+313 verbose parsed url   href: 'vinyl-fs@0.3.7' }
+314 verbose addNamed [ 'vinyl-fs', 'vinyl-fs@0.3.7' ]
+315 verbose addNamed [ null, null ]
+316 silly lockFile 6dc4deac-vinyl-fs-vinyl-fs-0-3-7 vinyl-fs@vinyl-fs@0.3.7
+317 verbose lock vinyl-fs@vinyl-fs@0.3.7 C:\Users\Piyush\AppData\Roaming\npm-cache\6dc4deac-vinyl-fs-vinyl-fs-0-3-7.lock
+318 verbose shrinkwrap resolving underscore@>=1.7.0 <1.8.0 to underscore@underscore@>=1.7.0 <1.8.0
+319 verbose cache add [ 'underscore@underscore@>=1.7.0 <1.8.0', null ]
+320 silly cache add name=undefined spec="underscore@underscore@>=1.7.0 <1.8.0" args=["underscore@underscore@>=1.7.0 <1.8.0",null]
+321 verbose parsed url { pathname: 'underscore@underscore@%3E=1.7.0%20%3C1.8.0',
+321 verbose parsed url   path: 'underscore@underscore@%3E=1.7.0%20%3C1.8.0',
+321 verbose parsed url   href: 'underscore@underscore@%3E=1.7.0%20%3C1.8.0' }
+322 silly cache add name="underscore" spec="underscore@>=1.7.0 <1.8.0" args=["underscore","underscore@>=1.7.0 <1.8.0"]
+323 verbose parsed url { pathname: 'underscore@%3E=1.7.0%20%3C1.8.0',
+323 verbose parsed url   path: 'underscore@%3E=1.7.0%20%3C1.8.0',
+323 verbose parsed url   href: 'underscore@%3E=1.7.0%20%3C1.8.0' }
+324 verbose addNamed [ 'underscore', 'underscore@>=1.7.0 <1.8.0' ]
+325 verbose addNamed [ null, '<1.8.0' ]
+326 silly lockFile f18dbf96-nderscore-underscore-1-7-0-1-8-0 underscore@underscore@>=1.7.0 <1.8.0
+327 verbose lock underscore@underscore@>=1.7.0 <1.8.0 C:\Users\Piyush\AppData\Roaming\npm-cache\f18dbf96-nderscore-underscore-1-7-0-1-8-0.lock
+328 verbose shrinkwrap resolving unzip@0.1.9 to unzip@unzip@0.1.9
+329 verbose cache add [ 'unzip@unzip@0.1.9', null ]
+330 silly cache add name=undefined spec="unzip@unzip@0.1.9" args=["unzip@unzip@0.1.9",null]
+331 verbose parsed url { pathname: 'unzip@unzip@0.1.9',
+331 verbose parsed url   path: 'unzip@unzip@0.1.9',
+331 verbose parsed url   href: 'unzip@unzip@0.1.9' }
+332 silly cache add name="unzip" spec="unzip@0.1.9" args=["unzip","unzip@0.1.9"]
+333 verbose parsed url { pathname: 'unzip@0.1.9',
+333 verbose parsed url   path: 'unzip@0.1.9',
+333 verbose parsed url   href: 'unzip@0.1.9' }
+334 verbose addNamed [ 'unzip', 'unzip@0.1.9' ]
+335 verbose addNamed [ null, null ]
+336 silly lockFile 6f308e17-unzip-unzip-0-1-9 unzip@unzip@0.1.9
+337 verbose lock unzip@unzip@0.1.9 C:\Users\Piyush\AppData\Roaming\npm-cache\6f308e17-unzip-unzip-0-1-9.lock
+338 verbose shrinkwrap resolving serve-static@1.7.1 to serve-static@serve-static@1.7.1
+339 verbose cache add [ 'serve-static@serve-static@1.7.1', null ]
+340 silly cache add name=undefined spec="serve-static@serve-static@1.7.1" args=["serve-static@serve-static@1.7.1",null]
+341 verbose parsed url { pathname: 'serve-static@serve-static@1.7.1',
+341 verbose parsed url   path: 'serve-static@serve-static@1.7.1',
+341 verbose parsed url   href: 'serve-static@serve-static@1.7.1' }
+342 silly cache add name="serve-static" spec="serve-static@1.7.1" args=["serve-static","serve-static@1.7.1"]
+343 verbose parsed url { pathname: 'serve-static@1.7.1',
+343 verbose parsed url   path: 'serve-static@1.7.1',
+343 verbose parsed url   href: 'serve-static@1.7.1' }
+344 verbose addNamed [ 'serve-static', 'serve-static@1.7.1' ]
+345 verbose addNamed [ null, null ]
+346 silly lockFile 320cf61d-serve-static-serve-static-1-7-1 serve-static@serve-static@1.7.1
+347 verbose lock serve-static@serve-static@1.7.1 C:\Users\Piyush\AppData\Roaming\npm-cache\320cf61d-serve-static-serve-static-1-7-1.lock
+348 verbose shrinkwrap resolving tiny-lr-fork@0.0.5 to tiny-lr-fork@tiny-lr-fork@0.0.5
+349 verbose cache add [ 'tiny-lr-fork@tiny-lr-fork@0.0.5', null ]
+350 silly cache add name=undefined spec="tiny-lr-fork@tiny-lr-fork@0.0.5" args=["tiny-lr-fork@tiny-lr-fork@0.0.5",null]
+351 verbose parsed url { pathname: 'tiny-lr-fork@tiny-lr-fork@0.0.5',
+351 verbose parsed url   path: 'tiny-lr-fork@tiny-lr-fork@0.0.5',
+351 verbose parsed url   href: 'tiny-lr-fork@tiny-lr-fork@0.0.5' }
+352 silly cache add name="tiny-lr-fork" spec="tiny-lr-fork@0.0.5" args=["tiny-lr-fork","tiny-lr-fork@0.0.5"]
+353 verbose parsed url { pathname: 'tiny-lr-fork@0.0.5',
+353 verbose parsed url   path: 'tiny-lr-fork@0.0.5',
+353 verbose parsed url   href: 'tiny-lr-fork@0.0.5' }
+354 verbose addNamed [ 'tiny-lr-fork', 'tiny-lr-fork@0.0.5' ]
+355 verbose addNamed [ null, null ]
+356 silly lockFile 26893bd0-tiny-lr-fork-tiny-lr-fork-0-0-5 tiny-lr-fork@tiny-lr-fork@0.0.5
+357 verbose lock tiny-lr-fork@tiny-lr-fork@0.0.5 C:\Users\Piyush\AppData\Roaming\npm-cache\26893bd0-tiny-lr-fork-tiny-lr-fork-0-0-5.lock
+358 verbose shrinkwrap resolving xml2js@0.4.4 to xml2js@xml2js@0.4.4
+359 verbose cache add [ 'xml2js@xml2js@0.4.4', null ]
+360 silly cache add name=undefined spec="xml2js@xml2js@0.4.4" args=["xml2js@xml2js@0.4.4",null]
+361 verbose parsed url { pathname: 'xml2js@xml2js@0.4.4',
+361 verbose parsed url   path: 'xml2js@xml2js@0.4.4',
+361 verbose parsed url   href: 'xml2js@xml2js@0.4.4' }
+362 silly cache add name="xml2js" spec="xml2js@0.4.4" args=["xml2js","xml2js@0.4.4"]
+363 verbose parsed url { pathname: 'xml2js@0.4.4',
+363 verbose parsed url   path: 'xml2js@0.4.4',
+363 verbose parsed url   href: 'xml2js@0.4.4' }
+364 verbose addNamed [ 'xml2js', 'xml2js@0.4.4' ]
+365 verbose addNamed [ null, null ]
+366 silly lockFile cdb0a144-xml2js-xml2js-0-4-4 xml2js@xml2js@0.4.4
+367 verbose lock xml2js@xml2js@0.4.4 C:\Users\Piyush\AppData\Roaming\npm-cache\cdb0a144-xml2js-xml2js-0-4-4.lock
+368 info addNameTag [ 'q', 'q@1.0.1' ]
+369 info addNameTag [ 'request', 'request@2.27.0' ]
+370 info addNameTag [ 'shelljs', 'shelljs@0.2.6' ]
+371 info addNameTag [ 'vinyl-fs', 'vinyl-fs@0.3.7' ]
+372 silly addNameRange { name: 'underscore', range: '<1.8.0', hasData: false }
+373 info addNameTag [ 'unzip', 'unzip@0.1.9' ]
+374 info addNameTag [ 'serve-static', 'serve-static@1.7.1' ]
+375 info addNameTag [ 'tiny-lr-fork', 'tiny-lr-fork@0.0.5' ]
+376 info addNameTag [ 'xml2js', 'xml2js@0.4.4' ]
+377 verbose shrinkwrap resolving archiver@0.5.1 to archiver@archiver@0.5.1
+378 verbose cache add [ 'archiver@archiver@0.5.1', null ]
+379 silly cache add name=undefined spec="archiver@archiver@0.5.1" args=["archiver@archiver@0.5.1",null]
+380 verbose parsed url { pathname: 'archiver@archiver@0.5.1',
+380 verbose parsed url   path: 'archiver@archiver@0.5.1',
+380 verbose parsed url   href: 'archiver@archiver@0.5.1' }
+381 silly cache add name="archiver" spec="archiver@0.5.1" args=["archiver","archiver@0.5.1"]
+382 verbose parsed url { pathname: 'archiver@0.5.1',
+382 verbose parsed url   path: 'archiver@0.5.1',
+382 verbose parsed url   href: 'archiver@0.5.1' }
+383 verbose addNamed [ 'archiver', 'archiver@0.5.1' ]
+384 verbose addNamed [ null, null ]
+385 silly lockFile 50f0a2d8-archiver-archiver-0-5-1 archiver@archiver@0.5.1
+386 verbose lock archiver@archiver@0.5.1 C:\Users\Piyush\AppData\Roaming\npm-cache\50f0a2d8-archiver-archiver-0-5-1.lock
+387 verbose shrinkwrap resolving colors@0.6.2 to colors@colors@0.6.2
+388 verbose cache add [ 'colors@colors@0.6.2', null ]
+389 silly cache add name=undefined spec="colors@colors@0.6.2" args=["colors@colors@0.6.2",null]
+390 verbose parsed url { pathname: 'colors@colors@0.6.2',
+390 verbose parsed url   path: 'colors@colors@0.6.2',
+390 verbose parsed url   href: 'colors@colors@0.6.2' }
+391 silly cache add name="colors" spec="colors@0.6.2" args=["colors","colors@0.6.2"]
+392 verbose parsed url { pathname: 'colors@0.6.2',
+392 verbose parsed url   path: 'colors@0.6.2',
+392 verbose parsed url   href: 'colors@0.6.2' }
+393 verbose addNamed [ 'colors', 'colors@0.6.2' ]
+394 verbose addNamed [ null, null ]
+395 silly lockFile 81969113-colors-colors-0-6-2 colors@colors@0.6.2
+396 verbose lock colors@colors@0.6.2 C:\Users\Piyush\AppData\Roaming\npm-cache\81969113-colors-colors-0-6-2.lock
+397 verbose shrinkwrap resolving connect@3.1.1 to connect@connect@3.1.1
+398 verbose cache add [ 'connect@connect@3.1.1', null ]
+399 silly cache add name=undefined spec="connect@connect@3.1.1" args=["connect@connect@3.1.1",null]
+400 verbose parsed url { pathname: 'connect@connect@3.1.1',
+400 verbose parsed url   path: 'connect@connect@3.1.1',
+400 verbose parsed url   href: 'connect@connect@3.1.1' }
+401 silly cache add name="connect" spec="connect@3.1.1" args=["connect","connect@3.1.1"]
+402 verbose parsed url { pathname: 'connect@3.1.1',
+402 verbose parsed url   path: 'connect@3.1.1',
+402 verbose parsed url   href: 'connect@3.1.1' }
+403 verbose addNamed [ 'connect', 'connect@3.1.1' ]
+404 verbose addNamed [ null, null ]
+405 silly lockFile 29588a11-connect-connect-3-1-1 connect@connect@3.1.1
+406 verbose lock connect@connect@3.1.1 C:\Users\Piyush\AppData\Roaming\npm-cache\29588a11-connect-connect-3-1-1.lock
+407 verbose url raw finalhandler
+408 verbose url resolving [ 'https://registry.npmjs.org/', './finalhandler' ]
+409 verbose url resolved https://registry.npmjs.org/finalhandler
+410 info trying registry request attempt 1 at 23:05:53
+411 verbose etag "6U6NN3ONQP5XIP66KM9RY3588"
+412 http GET https://registry.npmjs.org/finalhandler
+413 verbose url raw connect-livereload
+414 verbose url resolving [ 'https://registry.npmjs.org/', './connect-livereload' ]
+415 verbose url resolved https://registry.npmjs.org/connect-livereload
+416 info trying registry request attempt 1 at 23:05:53
+417 verbose etag "1O407BXI3DO0T30CT4NRI8AOD"
+418 http GET https://registry.npmjs.org/connect-livereload
+419 verbose url raw cross-spawn
+420 verbose url resolving [ 'https://registry.npmjs.org/', './cross-spawn' ]
+421 verbose url resolved https://registry.npmjs.org/cross-spawn
+422 info trying registry request attempt 1 at 23:05:53
+423 verbose etag "40XEWX0IYNF7N3PDZ5IFSO2Z1"
+424 http GET https://registry.npmjs.org/cross-spawn
+425 info addNameTag [ 'archiver', 'archiver@0.5.1' ]
+426 info addNameTag [ 'colors', 'colors@0.6.2' ]
+427 verbose url raw gulp
+428 verbose url resolving [ 'https://registry.npmjs.org/', './gulp' ]
+429 verbose url resolved https://registry.npmjs.org/gulp
+430 info trying registry request attempt 1 at 23:05:53
+431 verbose etag "8MS79RVU8FG5QF2GAFERROBIV"
+432 http GET https://registry.npmjs.org/gulp
+433 verbose url raw prompt
+434 verbose url resolving [ 'https://registry.npmjs.org/', './prompt' ]
+435 verbose url resolved https://registry.npmjs.org/prompt
+436 info trying registry request attempt 1 at 23:05:53
+437 verbose etag "3OCFX1C2NVMAW9CL84FZQCZZB"
+438 http GET https://registry.npmjs.org/prompt
+439 info addNameTag [ 'connect', 'connect@3.1.1' ]
+440 verbose url raw q
+441 verbose url resolving [ 'https://registry.npmjs.org/', './q' ]
+442 verbose url resolved https://registry.npmjs.org/q
+443 info trying registry request attempt 1 at 23:05:53
+444 verbose etag "YEZ88YJKTLQGUAN1YNU734DJ"
+445 http GET https://registry.npmjs.org/q
+446 verbose url raw tiny-lr-fork
+447 verbose url resolving [ 'https://registry.npmjs.org/', './tiny-lr-fork' ]
+448 verbose url resolved https://registry.npmjs.org/tiny-lr-fork
+449 info trying registry request attempt 1 at 23:05:53
+450 verbose etag "9IN32M0COVRSRENML44L3BULK"
+451 http GET https://registry.npmjs.org/tiny-lr-fork
+452 verbose url raw unzip
+453 verbose url resolving [ 'https://registry.npmjs.org/', './unzip' ]
+454 verbose url resolved https://registry.npmjs.org/unzip
+455 info trying registry request attempt 1 at 23:05:53
+456 verbose etag "4ZGCOMIB8C51064KYUTFZNFNO"
+457 http GET https://registry.npmjs.org/unzip
+458 verbose url raw xml2js
+459 verbose url resolving [ 'https://registry.npmjs.org/', './xml2js' ]
+460 verbose url resolved https://registry.npmjs.org/xml2js
+461 info trying registry request attempt 1 at 23:05:53
+462 verbose etag "96G99IJZ4B0DTFP174R92E8AJ"
+463 http GET https://registry.npmjs.org/xml2js
+464 verbose url raw npm
+465 verbose url resolving [ 'https://registry.npmjs.org/', './npm' ]
+466 verbose url resolved https://registry.npmjs.org/npm
+467 info trying registry request attempt 1 at 23:05:53
+468 verbose etag "8KJE8BC7NY83QQAXC5ZHYVNRH"
+469 http GET https://registry.npmjs.org/npm
+470 verbose url raw form-data
+471 verbose url resolving [ 'https://registry.npmjs.org/', './form-data' ]
+472 verbose url resolved https://registry.npmjs.org/form-data
+473 info trying registry request attempt 1 at 23:05:53
+474 verbose etag "BINP41KTDLXKX9L00Q53WNVZM"
+475 http GET https://registry.npmjs.org/form-data
+476 verbose url raw progress
+477 verbose url resolving [ 'https://registry.npmjs.org/', './progress' ]
+478 verbose url resolved https://registry.npmjs.org/progress
+479 info trying registry request attempt 1 at 23:05:53
+480 verbose etag "ESQVZTIZ4MZMKCDWY6MS337M3"
+481 http GET https://registry.npmjs.org/progress
+482 verbose url raw proxy-middleware
+483 verbose url resolving [ 'https://registry.npmjs.org/', './proxy-middleware' ]
+484 verbose url resolved https://registry.npmjs.org/proxy-middleware
+485 info trying registry request attempt 1 at 23:05:53
+486 verbose etag "9G83KSXIZFB1MR7RUYZ923TW7"
+487 http GET https://registry.npmjs.org/proxy-middleware
+488 verbose url raw vinyl-fs
+489 verbose url resolving [ 'https://registry.npmjs.org/', './vinyl-fs' ]
+490 verbose url resolved https://registry.npmjs.org/vinyl-fs
+491 info trying registry request attempt 1 at 23:05:53
+492 verbose etag "860GZ38FRRB9BR81CGBUCD96O"
+493 http GET https://registry.npmjs.org/vinyl-fs
+494 verbose url raw open
+495 verbose url resolving [ 'https://registry.npmjs.org/', './open' ]
+496 verbose url resolved https://registry.npmjs.org/open
+497 info trying registry request attempt 1 at 23:05:53
+498 verbose etag "ER2038ZCNLSDH0CO4EG25AK37"
+499 http GET https://registry.npmjs.org/open
+500 verbose url raw ncp
+501 verbose url resolving [ 'https://registry.npmjs.org/', './ncp' ]
+502 verbose url resolved https://registry.npmjs.org/ncp
+503 info trying registry request attempt 1 at 23:05:53
+504 verbose etag "798S99R5AI6FRGZ4RQOUS2J1U"
+505 http GET https://registry.npmjs.org/ncp
+506 verbose url raw event-stream
+507 verbose url resolving [ 'https://registry.npmjs.org/', './event-stream' ]
+508 verbose url resolved https://registry.npmjs.org/event-stream
+509 info trying registry request attempt 1 at 23:05:53
+510 verbose etag "3YMETVNIQTW65ZK35FD9ZMN9V"
+511 http GET https://registry.npmjs.org/event-stream
+512 verbose url raw shelljs
+513 verbose url resolving [ 'https://registry.npmjs.org/', './shelljs' ]
+514 verbose url resolved https://registry.npmjs.org/shelljs
+515 info trying registry request attempt 1 at 23:05:53
+516 verbose etag "AKRP8YJKK5R67Q3JD834LTNRB"
+517 http GET https://registry.npmjs.org/shelljs
+518 verbose url raw optimist
+519 verbose url resolving [ 'https://registry.npmjs.org/', './optimist' ]
+520 verbose url resolved https://registry.npmjs.org/optimist
+521 info trying registry request attempt 1 at 23:05:53
+522 verbose etag "7K21K48G8H95RHFYCMQAUC9XM"
+523 http GET https://registry.npmjs.org/optimist
+524 verbose url raw connect
+525 verbose url resolving [ 'https://registry.npmjs.org/', './connect' ]
+526 verbose url resolved https://registry.npmjs.org/connect
+527 info trying registry request attempt 1 at 23:05:53
+528 verbose etag "85DWUUBCQ3DT5LC1TA2S7GKJU"
+529 http GET https://registry.npmjs.org/connect
+530 verbose url raw archiver
+531 verbose url resolving [ 'https://registry.npmjs.org/', './archiver' ]
+532 verbose url resolved https://registry.npmjs.org/archiver
+533 info trying registry request attempt 1 at 23:05:53
+534 verbose etag "CCO3GJHKQL4X7KQHLITMPK0A8"
+535 http GET https://registry.npmjs.org/archiver
+536 verbose url raw request
+537 verbose url resolving [ 'https://registry.npmjs.org/', './request' ]
+538 verbose url resolved https://registry.npmjs.org/request
+539 info trying registry request attempt 1 at 23:05:53
+540 verbose etag "YI9OE3FC9B6OJQ2VEJ6KMKQU"
+541 http GET https://registry.npmjs.org/request
+542 verbose url raw underscore
+543 verbose url resolving [ 'https://registry.npmjs.org/', './underscore' ]
+544 verbose url resolved https://registry.npmjs.org/underscore
+545 info trying registry request attempt 1 at 23:05:53
+546 verbose etag "96VS001SLHKBCASK4663K1WGO"
+547 http GET https://registry.npmjs.org/underscore
+548 verbose url raw colors
+549 verbose url resolving [ 'https://registry.npmjs.org/', './colors' ]
+550 verbose url resolved https://registry.npmjs.org/colors
+551 info trying registry request attempt 1 at 23:05:53
+552 verbose etag "8XJ0ABTCGLXIQU26PRPXENTL4"
+553 http GET https://registry.npmjs.org/colors
+554 verbose url raw serve-static
+555 verbose url resolving [ 'https://registry.npmjs.org/', './serve-static' ]
+556 verbose url resolved https://registry.npmjs.org/serve-static
+557 info trying registry request attempt 1 at 23:05:53
+558 verbose etag "5UIMU28TSRFSVLSYLYOO7DHF3"
+559 http GET https://registry.npmjs.org/serve-static
+560 http 304 https://registry.npmjs.org/connect-livereload
+561 silly registry.get cb [ 304,
+561 silly registry.get   { date: 'Tue, 23 Dec 2014 07:05:53 GMT',
+561 silly registry.get     server: 'Apache',
+561 silly registry.get     via: '1.1 varnish',
+561 silly registry.get     'last-modified': 'Tue, 23 Dec 2014 06:39:19 GMT',
+561 silly registry.get     'cache-control': 'max-age=60',
+561 silly registry.get     etag: '"1O407BXI3DO0T30CT4NRI8AOD"',
+561 silly registry.get     age: '26',
+561 silly registry.get     'x-served-by': 'cache-sn86-SIN',
+561 silly registry.get     'x-cache': 'HIT',
+561 silly registry.get     'x-cache-hits': '10',
+561 silly registry.get     'x-timer': 'S1419318353.459671,VS0,VE0',
+561 silly registry.get     vary: 'Accept',
+561 silly registry.get     'content-length': '0',
+561 silly registry.get     'keep-alive': 'timeout=10, max=50',
+561 silly registry.get     connection: 'Keep-Alive' } ]
+562 verbose etag connect-livereload from cache
+563 http 304 https://registry.npmjs.org/finalhandler
+564 silly registry.get cb [ 304,
+564 silly registry.get   { date: 'Tue, 23 Dec 2014 07:05:53 GMT',
+564 silly registry.get     server: 'Apache',
+564 silly registry.get     via: '1.1 varnish',
+564 silly registry.get     'last-modified': 'Tue, 23 Dec 2014 07:02:48 GMT',
+564 silly registry.get     'cache-control': 'max-age=60',
+564 silly registry.get     etag: '"6U6NN3ONQP5XIP66KM9RY3588"',
+564 silly registry.get     age: '51',
+564 silly registry.get     'x-served-by': 'cache-sn87-SIN',
+564 silly registry.get     'x-cache': 'HIT',
+564 silly registry.get     'x-cache-hits': '8',
+564 silly registry.get     'x-timer': 'S1419318353.461058,VS0,VE0',
+564 silly registry.get     vary: 'Accept',
+564 silly registry.get     'content-length': '0',
+564 silly registry.get     'keep-alive': 'timeout=10, max=50',
+564 silly registry.get     connection: 'Keep-Alive' } ]
+565 verbose etag finalhandler from cache
+566 silly lockFile c0184f76-ereload-connect-livereload-0-4-0 connect-livereload@connect-livereload@0.4.0
+567 silly lockFile ba1ba4f0-finalhandler-finalhandler-0-2-0 finalhandler@finalhandler@0.2.0
+568 verbose about to build C:\Users\Piyush\AppData\Roaming\npm\node_modules\ionic
+569 info C:\Users\Piyush\AppData\Roaming\npm\node_modules\ionic unbuild
+570 verbose from cache C:\Users\Piyush\AppData\Roaming\npm\node_modules\ionic\package.json
+571 info preuninstall ionic@1.2.13
+572 info uninstall ionic@1.2.13
+573 verbose true,C:\Users\Piyush\AppData\Roaming\npm\node_modules,C:\Users\Piyush\AppData\Roaming\npm\node_modules unbuild ionic@1.2.13
+574 verbose C:\Users\Piyush\AppData\Roaming\npm,[object Object] binRoot
+575 info postuninstall ionic@1.2.13
+576 http 304 https://registry.npmjs.org/tiny-lr-fork
+577 silly registry.get cb [ 304,
+577 silly registry.get   { date: 'Tue, 23 Dec 2014 07:05:53 GMT',
+577 silly registry.get     server: 'Apache',
+577 silly registry.get     via: '1.1 varnish',
+577 silly registry.get     'last-modified': 'Tue, 23 Dec 2014 07:05:26 GMT',
+577 silly registry.get     'cache-control': 'max-age=60',
+577 silly registry.get     etag: '"9IN32M0COVRSRENML44L3BULK"',
+577 silly registry.get     age: '27',
+577 silly registry.get     'x-served-by': 'cache-sn87-SIN',
+577 silly registry.get     'x-cache': 'HIT',
+577 silly registry.get     'x-cache-hits': '2',
+577 silly registry.get     'x-timer': 'S1419318353.586688,VS0,VE0',
+577 silly registry.get     vary: 'Accept',
+577 silly registry.get     'content-length': '0',
+577 silly registry.get     'keep-alive': 'timeout=10, max=49',
+577 silly registry.get     connection: 'Keep-Alive' } ]
+578 verbose etag tiny-lr-fork from cache
+579 silly lockFile 26893bd0-tiny-lr-fork-tiny-lr-fork-0-0-5 tiny-lr-fork@tiny-lr-fork@0.0.5
+580 http 304 https://registry.npmjs.org/cross-spawn
+581 silly registry.get cb [ 304,
+581 silly registry.get   { date: 'Tue, 23 Dec 2014 07:05:53 GMT',
+581 silly registry.get     server: 'Apache',
+581 silly registry.get     via: '1.1 varnish',
+581 silly registry.get     'last-modified': 'Tue, 23 Dec 2014 07:05:53 GMT',
+581 silly registry.get     'cache-control': 'max-age=60',
+581 silly registry.get     etag: '"40XEWX0IYNF7N3PDZ5IFSO2Z1"',
+581 silly registry.get     age: '0',
+581 silly registry.get     'x-served-by': 'cache-sn86-SIN',
+581 silly registry.get     'x-cache': 'HIT',
+581 silly registry.get     'x-cache-hits': '1',
+581 silly registry.get     'x-timer': 'S1419318353.467512,VS0,VE202',
+581 silly registry.get     vary: 'Accept',
+581 silly registry.get     'content-length': '0',
+581 silly registry.get     'keep-alive': 'timeout=10, max=50',
+581 silly registry.get     connection: 'Keep-Alive' } ]
+582 verbose etag cross-spawn from cache
+583 http 304 https://registry.npmjs.org/prompt
+584 silly registry.get cb [ 304,
+584 silly registry.get   { date: 'Tue, 23 Dec 2014 07:05:53 GMT',
+584 silly registry.get     server: 'Apache',
+584 silly registry.get     via: '1.1 varnish',
+584 silly registry.get     'last-modified': 'Tue, 23 Dec 2014 07:05:53 GMT',
+584 silly registry.get     'cache-control': 'max-age=60',
+584 silly registry.get     etag: '"3OCFX1C2NVMAW9CL84FZQCZZB"',
+584 silly registry.get     age: '0',
+584 silly registry.get     'x-served-by': 'cache-sn86-SIN',
+584 silly registry.get     'x-cache': 'HIT',
+584 silly registry.get     'x-cache-hits': '1',
+584 silly registry.get     'x-timer': 'S1419318353.467953,VS0,VE214',
+584 silly registry.get     vary: 'Accept',
+584 silly registry.get     'content-length': '0',
+584 silly registry.get     'keep-alive': 'timeout=10, max=50',
+584 silly registry.get     connection: 'Keep-Alive' } ]
+585 verbose etag prompt from cache
+586 silly lockFile 3ab24a32-cross-spawn-cross-spawn-0-2-3 cross-spawn@cross-spawn@0.2.3
+587 silly lockFile f5395279-prompt-prompt-0-2-12 prompt@prompt@0.2.12
+588 error Error: No compatible version found: connect-livereload@'connect-livereload@0.4.0'
+588 error Valid install targets:
+588 error ["0.0.2","0.0.3","0.1.0","0.1.1","0.1.2","0.1.3","0.1.4","0.2.0","0.3.0","0.3.1","0.3.2","0.4.0","0.4.1","0.5.0","0.5.1","0.5.2"]
+588 error     at installTargetsError (C:\Program Files\nodejs\node_modules\npm\lib\cache.js:563:10)
+588 error     at C:\Program Files\nodejs\node_modules\npm\lib\cache.js:478:10
+588 error     at saved (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\get.js:138:7)
+588 error     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:218:7
+588 error     at Object.oncomplete (fs.js:297:15)
+589 error If you need help, you may report this log at:
+589 error     <http://github.com/isaacs/npm/issues>
+589 error or email it to:
+589 error     <npm-@googlegroups.com>
+590 error System Windows_NT 6.2.9200
+591 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "-g" "install" "ionic"
+592 error cwd D:\personal\Projects\mobile\Ionic Framework\Getting started
+593 error node -v v0.8.14
+594 error npm -v 1.1.65
+595 verbose exit [ 1, true ]
