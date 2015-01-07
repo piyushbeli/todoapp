@@ -86,8 +86,16 @@ angular.module('todo.services', ['todo.config', 'todo.models'])
 
 	self.createTask = function(task) {
 		var deferred = $q.defer();
-		var query = 'INSERT INTO ' + TABLE_NAME + ' (description, projectId) VALUES(?, ?)';
-		var values = [task.description, task.projectId];		
+		var query = "";
+		var values = [];
+		if (angular.isUndefined(task.id)) {
+			query = 'INSERT INTO ' + TABLE_NAME + ' (description, projectId) VALUES(?, ?)';
+			values = [task.description, task.projectId];	
+		} else {
+			query = "UPDATE " + TABLE_NAME + ' SET description = ? where id = ?';
+			values = [task.description, task.id];	
+		}		
+			
 		DB.query(query, values).then(function(result) {
 			self.tasks.push(Task.build(task));
 			self.fetchAllTasks();			

@@ -11,6 +11,7 @@ $energized:                       #ffc900 !default;
 $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
+$grey:							  #625B5B !default;
 
 
 // Base
@@ -152,6 +153,12 @@ $button-default-border:           $button-stable-border !default;
 $button-default-active-bg:        $button-stable-active-bg !default;
 $button-default-active-border:    $button-stable-active-border !default;
 
+$button-grey-bg:                  $grey !default;
+$button-grey-text:                #fff !default;
+$button-grey-border:              darken($grey, 8%) !default;
+$button-grey-active-bg:           darken($grey, 8%) !default;
+$button-grey-active-border:       darken($grey, 8%) !default;
+
 
 // Bars
 // -------------------------------
@@ -225,6 +232,12 @@ $bar-default-text:                $bar-light-text !default;
 $bar-default-border:              $bar-light-border !default;
 $bar-default-active-bg:           $bar-light-active-bg !default;
 $bar-default-active-border:       $bar-light-active-border !default;
+
+$bar-grey-bg:                     rgba($button-grey-bg, $bar-transparency) !default;
+$bar-grey-text:                   $button-grey-text !default;
+$bar-grey-border:                 $button-grey-border !default;
+$bar-grey-active-bg:              $button-grey-active-bg !default;
+$bar-grey-active-border:          $button-grey-active-border !default;
 
 
 // Tabs

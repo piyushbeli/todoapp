@@ -1,11 +1,11 @@
-<div> testing </div>
 <ion-view view-title="Tasks">
   <ion-content padding="false">
-    <div class="list">
-    	<div class="item item-divider" 
-           ng-repeat="(key, value) in tasks | groupBy: 'projectId'">
-    		 {{projectName(key)}}
-	    	<div class="item" ng-repeat = "task in value">
+    <div class="list tasks">
+    	<div class="item" ng-repeat="(key, value) in tasks | groupBy: 'projectId'">
+    		<div class="item-divider-custom">
+          {{projectName(key)}}
+        </div> 
+	    	<div class="item" ng-repeat = "task in value" ng-click="taskDetail(task)">
 	    		{{task.description}}
 	    	</div>
     	</div>

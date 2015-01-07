@@ -6,11 +6,29 @@ angular.module('todo.controllers', [])
       ProjectService.fetchAllProjects();
     }, 2000);
     $scope.tasks = TaskService.getAllTasks();
-    $scope.projects = ProjectService.getAllProjects();  
+    $scope.projects = ProjectService.getAllProjects();
+    $ionicModal.fromTemplateUrl('templates/taskModal.html', {
+      scope: $scope,
+      animation: 'slide-in-up'
+      }).then(function(modal) {
+        $scope.taskModal = modal;
+      }) 
+     
 
     $scope.projectName = function(projectId) {
       return ProjectService.getProjectById(projectId).name;
     }  
+
+    $scope.taskDetail = function(task) {
+      $scope.task = task;
+      $scope.taskModal.show();
+    }
+
+    $scope.addTask = function() {
+      TaskService.createTask($scope.task);
+      $scope.taskModal.hide();
+    }
+     
 })
 
 .controller('SearchController', function($scope) {
@@ -20,19 +38,19 @@ angular.module('todo.controllers', [])
 
 .controller('AppController', function($scope, $stateParams, $ionicModal, TaskService) {
     $scope.groupBy = 'project';
-    $ionicModal.fromTemplateUrl('templates/addTaskModal.html', {
+    $ionicModal.fromTemplateUrl('templates/taskModal.html', {
       scope: $scope,
       animation: 'slide-in-up'
     }).then(function(modal) {
-      $scope.addTaskModal = modal;
-    })      
+      $scope.taskModal = modal;
+    }) 
 
     $scope.openAddTaskDialog = function() {     
       $scope.task = {};
-      $scope.addTaskModal.show();
+      $scope.taskModal.show();
     }
     $scope.addTask = function() {
       TaskService.createTask($scope.task);
-      $scope.addTaskModal.hide();
+      $scope.taskModal.hide();
     }
 });
