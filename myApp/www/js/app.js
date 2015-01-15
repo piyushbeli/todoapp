@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('todo', ['ionic', 'ngCordova', 'todo.controllers', 'todo.services', 'angular.filter'])
+angular.module('todo', ['ionic', 'ngCordova', 'todo.controllers', 'todo.services', 'angular.filter', 'pickadate', 'picktime'])
 
 .run(function($ionicPlatform, $cordovaSQLite, DB) {
   $ionicPlatform.ready(function() {
@@ -29,7 +29,7 @@ angular.module('todo', ['ionic', 'ngCordova', 'todo.controllers', 'todo.services
     url: "/app",
     abstract: true,
     templateUrl: "templates/menu.html",
-    controller: 'AppController'
+    controller: 'TasksController'
   })
 
   .state('app.search', {

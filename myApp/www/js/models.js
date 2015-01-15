@@ -1,6 +1,14 @@
 angular.module('todo.models', [])
 
 .factory('Task', function(ProjectService) {
+	var self = this;
+
+	var Priority = {
+		NORMAL: 'low',		
+		HIGH: 'high'
+	}
+
+	var defaultDueDate = new Date()
 
 	function Alarm(alarm) {
 		this.time = alarm.time;
@@ -11,9 +19,12 @@ angular.module('todo.models', [])
 	function Task(task) {
 		this.id = task.id;
 		this.description = task.description;
-		this.projectId = task.projectId;
-		this.createdTime = typeof task.createdTime != undefined ? task.createdTime : new Date();
-		this.done = typeof task.done != undefined ? task.done : false;
+		this.project = ProjectService.getProjectById(task.projectId);	
+		this.createdTime = typeof task.createdTime != 'undefined' ? task.createdTime : new Date();
+		this.isDone = typeof task.isDone != 'undefined' ? new Boolean(task.isDone).valueOf() : false;
+		this.priority = typeof task.priority != 'undefined' ? task.priority : Priority.NORMAL;
+		this.dueDate = task.dueDate;
+		this.remindAt = typeof task.remindAt != 'undefined' ? task.remindAt : null;
 	}
 
 	Task.prototype.projectName = function(projectId) {
@@ -27,18 +38,26 @@ angular.module('todo.models', [])
 		this.priority = priority;
 	}
 
+	Task.prototype.setProject = function(project) {
+		this.project = project;
+	}
+	
 	self.build = function(task) {
 		if (angular.isArray(task)) {
-			var newTasks = [];
+			var taskObjs = [];
 			angular.forEach(task, function(t) {
-				var newTask = new Task(t);
-				newTasks.push(newTask);
+				var taskObj = new Task(t);
+				taskObjs.push(taskObj);
 			})
-			return newTasks;
+			return taskObjs;
 		} else {
-			var newTask = new Task(task);
-			return newTask;
+			var taskObj = new Task(task);
+			return taskObj;
 		}
+	}
+
+	self.newInstance = function() {
+		return new Task({});
 	}
 
 	return self;

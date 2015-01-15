@@ -42,7 +42,7 @@ angular.module('todo.services', ['todo.config', 'todo.models'])
 	            transaction.executeSql(query, bindings, function(transaction, result) {
 	                deferred.resolve(result);
 	            }, function(transaction, error) {
-	            	console.log("Error occured in query: " + query);
+	            	console.log("Error occured in query: " + query + "##Error: " + error.message);
 	                deferred.reject(error);
 	            });
         	});
@@ -76,36 +76,90 @@ angular.module('todo.services', ['todo.config', 'todo.models'])
 	self.tasks = [];
 
 	self.fetchAllTasks = function() {
+		var deferred = $q.defer();
 		DB.fetchAll(TABLE_NAME).then(function(output) {
 			//can not use self.tasks = [], because it changes the reference and it will no more be bound with scope.
 			self.tasks.splice(0, self.tasks.length);
 			output = Task.build(output);
 			[].push.apply(self.tasks, output);	
+			deferred.resolve(self.tasks);	
 		})
+		return deferred.promise;
 	}
 
-	self.createTask = function(task) {
+	self.updateTask = function(task) {
 		var deferred = $q.defer();
-		var query = "";
-		var values = [];
+		var query = "";	
+
+		var values = [task.description, task.project.id, new Number(task.isDone).valueOf(), task.priority, task.dueDate, task.remindAt];
 		if (angular.isUndefined(task.id)) {
-			query = 'INSERT INTO ' + TABLE_NAME + ' (description, projectId) VALUES(?, ?)';
-			values = [task.description, task.projectId];	
+			query = 'INSERT INTO ' + TABLE_NAME + ' (description, projectId, isDone, priority, dueDate, remindAt) VALUES(?, ?, ?, ?, ?, ?)';				
 		} else {
-			query = "UPDATE " + TABLE_NAME + ' SET description = ? where id = ?';
-			values = [task.description, task.id];	
+			query = "UPDATE " + TABLE_NAME + ' SET description = ? , projectId = ?, isDone = ?, priority = ?, dueDate = ?, remindAt = ? where id = ?';
+			values.push(task.id);	
 		}		
 			
 		DB.query(query, values).then(function(result) {
-			self.tasks.push(Task.build(task));
-			self.fetchAllTasks();			
+			task.id = task.id != null ? task.id : result.insertId;
+			//self.tasks.push(Task.build(task));			
+			self.fetchAllTasks();	
+			deferred.resolve(task);		
 		}, function(error) {
-			console.log("Error ocured while creating the task: " + error);
+			console.log("Error ocured while creating the task: " + error.message);
+			deferred.reject(error);
 		})
+		return deferred.promise;
+	}
+
+	self.deleteTask = function(task) {
+		var deferred = $q.defer();
+		var query = "DELETE FROM " + TABLE_NAME + " WHERE id = ?";
+		var values = [task.id];
+
+		DB.query(query, values).then(function(result) {						
+			self.fetchAllTasks();	
+			deferred.resolve(task);		
+		}, function(error) {
+			console.log("Error ocured while creating the task: " + error.message);
+			deferred.reject(error);
+		})
+		return deferred.promise;
 	}
 
 	self.getAllTasks = function() {
 		return self.tasks;
+	}
+
+	self.newTaskInstance = function() {
+		return Task.newInstance();
+	}
+
+	self.markDone = function(taskIds) {
+		var deferred = $q.defer();
+		var query = "UPDATE " + TABLE_NAME + " SET isDone = 1 WHERE id in (?)";
+		DB.query(query, taskIds).then(function(result) {						
+			self.fetchAllTasks();	
+			deferred.resolve(taskIds);		
+		}, function(error) {
+			console.log("Error ocured while creating the task: " + error.message);
+			deferred.reject(error);
+		})
+		return deferred.promise;
+	}
+
+
+	self.deleteTasks = function(taskIds) {
+		var deferred = $q.defer();
+		var query = "DELETE FROM " + TABLE_NAME + " WHERE id in (?)";
+
+		DB.query(query, taskIds).then(function(result) {						
+			self.fetchAllTasks();	
+			deferred.resolve(taskIds);		
+		}, function(error) {
+			console.log("Error ocured while creating the task: " + error.message);
+			deferred.reject(error);
+		})
+		return deferred.promise;
 	}
 
 	return self;
@@ -121,23 +175,29 @@ angular.module('todo.services', ['todo.config', 'todo.models'])
 	}
 
 	self.fetchAllProjects = function() {
+		var deferred = $q.defer();
 		DB.fetchAll(TABLE_NAME).then(function(output) {
 			//can not use self.tasks = [], because it changes the reference and it will no more be bound with scope.
-			self.projects.splice(0, self.projects.length);
-			output.unshift({name: "Create new", id: -1});
+			self.projects.splice(0, self.projects.length);		
 			[].push.apply(self.projects, output);	
+			deferred.resolve(self.projects);
 		})
+		return deferred.promise;
 	}
 
-	self.createProject = function(project) {
+	self.updateProject = function(project) {
 		var deferred = $q.defer();
 		var query = 'INSERT INTO ' + TABLE_NAME + ' (name) VALUES(?)';
 		var values = [project.name];		
 		DB.query(query, values).then(function(result) {
-			self.projects.push(project);		
+			project.id = project.id != null ? project.id : result.insertId;
+			self.projects.push(project);
+			deferred.resolve(project);		
 		}, function(error) {
-			console.log("Error ocured while creating the project: " + error);
+			console.log("Error ocured while creating the project: " + error.message);
+			deferred.reject(error);
 		})
+		return deferred.promise;
 	}
 
 	self.getAllProjects = function() {
@@ -148,11 +208,11 @@ angular.module('todo.services', ['todo.config', 'todo.models'])
 		if (angular.isUndefined(projectId)) {
 			return defaultProject;
 		}
-		angular.forEach(self.projects, function(project) {
-			if(project.id === projectId) {
-				return project;
+		for(i in self.projects) {
+			if(self.projects[i].id == projectId) {
+				return self.projects[i];
 			}
-		})
+		}
 		return defaultProject;
 	}
 

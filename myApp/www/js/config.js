@@ -14,7 +14,11 @@ angular.module('todo.config', [])
             columns: [
                 {name: 'id', type: 'integer primary key'},
                 {name: 'description', type: 'text'},
-                {name: 'projectId', type: 'integer'} 
+                {name: 'projectId', type: 'integer'},
+                {name: 'isDone', type: 'integer'},
+                {name: 'priority', type: 'text'},
+                {name: 'dueDate', type: 'integer'},
+                {name: 'remindAt', type: 'integer'}
             ],         
             constraints: [
                 "FOREIGN KEY(projectId) REFERENCES project(id)"

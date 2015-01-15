@@ -1,12 +1,13 @@
-@import "../lib/bootstrap-sass-official/assets/stylesheets/bootstrap/_mixins.scss";
-@import "../lib/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss";
-@import "../lib/bootstrap-sass-official/assets/stylesheets/bootstrap/_forms.scss";
+$item-divider-padding: 15px 0px 2px 7px; 
 @import "../lib/ionic/scss/ionic";
 
 $selected-bg-btn: rgba(59, 129, 165, 0.49);
 $bar-grey-bg: rgba(107, 99, 99, 0.76);
 $grey-task-bg: rgba(59, 129, 165, 0.49);
 $hyper-link-color: #A99D9D;
+$grey: #766A81;
+
+$font-size-label: 16px;
 
 .col-offset-2 {
   margin-left: 2%;
@@ -23,6 +24,7 @@ textarea.notebook {
 	-webkit-appearance: none;
 	border-radius: 0;
 	background: url(../img/notebook.png);
+	color: #797272;
 }
 
 
@@ -51,6 +53,58 @@ body {
 }
 
 .item-divider-custom {
-	color: $dark;
+	color: $dark ;
+	font-weight: 700;
+	font-size: 15px;
+	h4 {
+		margin: $item-border-width * -1;
+  		padding: $item-divider-padding;
+  		color: cadetblue;
+	};
+	border-bottom: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: $grey;
+}
 
+
+ion-footer-bar {
+	padding: 0px;
+	.button-full {
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+	};	
+}
+
+.list.tasks {
+	.done {
+		color: $badge-default-text;
+	}
+	.item {
+		padding: 3px;
+	}
+	
+}
+
+.button-grey {
+	background-color: $grey;
+}
+
+.label {
+	font-weight: bold;
+	font-size: $font-size-label;
+	float: left;
+}
+.readonly-input {
+	font-size: $font-size-label;
+	float: left;
+	color: $hyper-link-color;
+}
+
+
+ionic-time-picker {
+	
+}
+
+.button-inline {
+	cursor: pointer;
 }
