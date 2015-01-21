@@ -1,16 +1,23 @@
 $item-divider-padding: 15px 0px 2px 7px; 
+$royal: #464262;
 @import "../lib/ionic/scss/ionic";
 
 $selected-bg-btn: rgba(59, 129, 165, 0.49);
 $bar-grey-bg: rgba(107, 99, 99, 0.76);
 $grey-task-bg: rgba(59, 129, 165, 0.49);
 $hyper-link-color: #A99D9D;
-$grey: #766A81;
 
 $font-size-label: 16px;
 
 .col-offset-2 {
   margin-left: 2%;
+}
+
+.col-offset-5 {
+  margin-left: 5%;
+}
+.col-45 {
+	width: 45%;
 }
 
 textarea.notebook {
@@ -37,7 +44,7 @@ a {
 }
 
 .bar-header {
-	background-color: $grey;
+	background-color: $royal;
 }
 
 body {
@@ -63,7 +70,7 @@ body {
 	};
 	border-bottom: 2px;
 	border-bottom-style: solid;
-	border-bottom-color: $grey;
+	border-bottom-color: $royal;
 }
 
 
@@ -81,12 +88,12 @@ ion-footer-bar {
 	}
 	.item {
 		padding: 3px;
+	div {
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
 	}
 	
-}
-
-.button-grey {
-	background-color: $grey;
 }
 
 .label {

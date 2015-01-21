@@ -8,6 +8,7 @@ angular.module('todo.controllers', ['todo.filters'])
 
     $scope.tasks = TaskService.getAllTasks();
     $scope.projects = ProjectService.getAllProjects();
+    $scope.selectedProject = ProjectService.selectedProject;
 
     $scope.selectedTasks = [];
 
@@ -56,7 +57,9 @@ angular.module('todo.controllers', ['todo.filters'])
       return ProjectService.getProjectById(projectId).name;
     }  
 
-    $scope.taskDetail = function(task) {      
+    $scope.taskDetail = function(task) {  
+      //If you don't make a copy then even if you do not save the task after edit, updated values will be shown in 
+      //task list, after relaunching the app only you will get the previous values.    
       $scope.task = angular.copy(task);
       $scope.taskModal.show();
     }
@@ -121,9 +124,32 @@ angular.module('todo.controllers', ['todo.filters'])
         $scope.selectedTasks = [];
       })
     }
-     
+
+    $scope.filterByProject = function(project) {
+      if (project==null) {
+        project = {id: ""};
+      }
+      $scope.selectedProject.id = project.id;
+      $scope.selectedProject.name = project.name;
+    }     
 })
 
-.controller('SearchController', function($scope) {
+.controller('SearchController', function($scope, $routeParams) {
+
     $scope.searchString = "";
+})
+
+.controller('TasksReminderController', function($scope, TaskService, $routeParams) {
+    $ionicModal.fromTemplateUrl('templates/taskModal.html', {
+      scope: $scope,
+      animation: 'slide-in-right'
+      }).then(function(modal) {
+        $scope.taskModal = modal;
+    }) 
+    var taskId = $routeParams.get('id');
+    console.log("TasksReminderController for task: " + taskId);
+    if (taskId) {
+      $scope.task = TaskService.getTaskById(taskId)
+      $scope.taskModal.show();
+    }    
 })

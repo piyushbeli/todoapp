@@ -4,9 +4,9 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('todo', ['ionic', 'ngCordova', 'todo.controllers', 'todo.services', 'angular.filter', 'pickadate', 'picktime'])
+angular.module('todo', ['ionic', 'ngCordova', 'todo.controllers', 'todo.localnotifications', 'todo.services', 'angular.filter', 'pickadate', 'picktime'])
 
-.run(function($ionicPlatform, $cordovaSQLite, DB) {
+.run(function($ionicPlatform, $cordovaSQLite, DB, LocalNotificationService) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -18,6 +18,10 @@ angular.module('todo', ['ionic', 'ngCordova', 'todo.controllers', 'todo.services
       StatusBar.styleDefault();
     }
     DB.init();
+    if (window.plugin && window.plugin.notification.local) {
+        //Ask user to give the permission.
+        LocalNotificationService.registerPermission();        
+    }    
     
   });
 })
@@ -50,7 +54,17 @@ angular.module('todo', ['ionic', 'ngCordova', 'todo.controllers', 'todo.services
         controller: "TasksController"
       }
     }   
-  })         
+  })
+
+  .state('app.tasks.notification', {
+    url: "/task/:id",    
+    views: {
+      'menuContent': {
+        templateUrl: "templates/taskModal.html",
+        controller: "TasksReminderController"
+      }
+    }   
+  })          
   
   
   // if none of the above states are matched, use this as the fallback

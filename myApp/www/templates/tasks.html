@@ -1,6 +1,5 @@
-<ion-view view-title="Tasks">
-  <ion-content padding="false">
-    
+<ion-view view-title="{{Tasks}}">
+  <ion-content padding="false">    
       <div class="button-bar" ng-if="selectedTasks.length > 0">
         <button class="button button-assertive icon icon-left ion-close-round" ng-click="deleteSelected()"> Delete </button>
         <button class="button button-positive icon icon-right ion-checkmark-round" ng-click="markDoneSelected()"> Done </button>
@@ -8,17 +7,17 @@
     
     </div>
     <div class="list tasks">
-    	<div ng-repeat="(key, value) in tasks | reverse |  groupBy: '(dueDate | dateCategory)'">
+    	<div ng-repeat="(key, value) in tasks | orderBy: dueDate |  groupBy: '(dueDate | dateCategory)'">
     		<div class="item-divider-custom" ng-model="projects">
           <h4> {{key}} </h4>
         </div> 
-	    	<div class="item row" ng-repeat = "task in value" ng-click="taskDetail(task)" 
-              ng-class="{'done': task.isDone == true || task.isDone =='true' , 'priority-high': task.priority == 'high'} ">
+	    	<div class="item row" ng-repeat = "task in value | filter: {project: {id: selectedProject.id} }" ng-click="taskDetail(task)" 
+              ng-class="{'done': task.isDone == true, 'priority-high': task.priority == 'high'} ">
            <div class="col col-20"> 
               <ion-checkbox style="border: none" ng-click="selectTask(task.id)">&nbsp;</ion-checkbox>
            </div>
-	    		 <div class="col col-50">{{task.description}}</div>
-           <div class="col col-33"> 
+	    		 <div class="col col-45">{{task.description}} and {{selectedProject.id}}</div>
+           <div style="font-size: 14px" class="col col-33 col-offset-2"> 
              <div class="row" ng-if="task.dueDate != null">
               {{task.dueDate |  date: 'mediumDate'}}
              </div>
@@ -26,7 +25,6 @@
               <a class="icon icon-left ion-clock"> {{task.remindAt | time}} </a>
              </div>
            </div>
-
            
 	    	</div>
 

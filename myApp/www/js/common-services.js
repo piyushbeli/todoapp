@@ -70,7 +70,7 @@ angular.module('todo.services', ['todo.config', 'todo.models'])
 	return self;
 })
 
-.factory('TaskService', function($q, DB, Task) {
+.factory('TaskService', function($q, DB, Task, LocalNotificationService) {
 	var self = this;
 	var TABLE_NAME = 'task';
 	self.tasks = [];
@@ -93,7 +93,7 @@ angular.module('todo.services', ['todo.config', 'todo.models'])
 
 		var values = [task.description, task.project.id, new Number(task.isDone).valueOf(), task.priority, task.dueDate, task.remindAt];
 		if (angular.isUndefined(task.id)) {
-			query = 'INSERT INTO ' + TABLE_NAME + ' (description, projectId, isDone, priority, dueDate, remindAt) VALUES(?, ?, ?, ?, ?, ?)';				
+			query = 'INSERT INTO ' + TABLE_NAME + ' (description, projectId, isDone, priority, dueDate, remindAt) VALUES(?, ?, ?, ?, ?, ?)';
 		} else {
 			query = "UPDATE " + TABLE_NAME + ' SET description = ? , projectId = ?, isDone = ?, priority = ?, dueDate = ?, remindAt = ? where id = ?';
 			values.push(task.id);	
@@ -101,6 +101,7 @@ angular.module('todo.services', ['todo.config', 'todo.models'])
 			
 		DB.query(query, values).then(function(result) {
 			task.id = task.id != null ? task.id : result.insertId;
+			LocalNotificationService.createNotification(task);
 			//self.tasks.push(Task.build(task));			
 			self.fetchAllTasks();	
 			deferred.resolve(task);		
@@ -118,9 +119,10 @@ angular.module('todo.services', ['todo.config', 'todo.models'])
 
 		DB.query(query, values).then(function(result) {						
 			self.fetchAllTasks();	
+			LocalNotificationService.deleteNotification(task.id);	
 			deferred.resolve(task);		
 		}, function(error) {
-			console.log("Error ocured while creating the task: " + error.message);
+			console.log("Error ocured while deleting the task: " + error.message);
 			deferred.reject(error);
 		})
 		return deferred.promise;
@@ -136,9 +138,10 @@ angular.module('todo.services', ['todo.config', 'todo.models'])
 
 	self.markDone = function(taskIds) {
 		var deferred = $q.defer();
-		var query = "UPDATE " + TABLE_NAME + " SET isDone = 1 WHERE id in (?)";
-		DB.query(query, taskIds).then(function(result) {						
-			self.fetchAllTasks();	
+		var query = "UPDATE " + TABLE_NAME + " SET isDone = 1 WHERE id in (" + taskIds.join(',') + ")";
+		DB.query(query).then(function(result) {						
+			self.fetchAllTasks();
+			LocalNotificationService.deleteNotification(taskId);	
 			deferred.resolve(taskIds);		
 		}, function(error) {
 			console.log("Error ocured while creating the task: " + error.message);
@@ -150,16 +153,29 @@ angular.module('todo.services', ['todo.config', 'todo.models'])
 
 	self.deleteTasks = function(taskIds) {
 		var deferred = $q.defer();
-		var query = "DELETE FROM " + TABLE_NAME + " WHERE id in (?)";
+		var query = "DELETE FROM " + TABLE_NAME + " WHERE id in (" + taskIds.join(',') + ")";
 
-		DB.query(query, taskIds).then(function(result) {						
-			self.fetchAllTasks();	
+		DB.query(query).then(function(result) {						
+			self.fetchAllTasks();
+			LocalNotificationService.deleteNotification(taskIds);	
 			deferred.resolve(taskIds);		
 		}, function(error) {
-			console.log("Error ocured while creating the task: " + error.message);
+			console.log("Error ocured while deleting the task: " + error.message);
 			deferred.reject(error);
 		})
 		return deferred.promise;
+	}
+
+	self.getTaskById = function(taskId) {
+		if (angular.isUndefined(taskId)) {
+			return null;
+		}
+		for(i in self.tasks) {
+			if(self.tasks[i].id == taskId) {
+				return self.tasks[i];
+			}
+		}
+		return null;
 	}
 
 	return self;
@@ -171,8 +187,9 @@ angular.module('todo.services', ['todo.config', 'todo.models'])
 	var TABLE_NAME = "project";
 	var defaultProject = {
 		name: 'Default',
-		id: -1
+		id: 0
 	}
+	self.selectedProject = {id: ""};
 
 	self.fetchAllProjects = function() {
 		var deferred = $q.defer();
